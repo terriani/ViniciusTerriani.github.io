@@ -65,7 +65,7 @@ html,  body {
 
 
 #home{
-    background-image: url("imagens/imagem_principal.png");
+    background-image: url("imagem_principal.png");
     background-size: 100%;
     box-shadow: 5px 5px 10px black;
     z-index: 5;
@@ -87,7 +87,7 @@ html,  body {
 
 
 #sobre{
-    background-image: url("imagens/foto2.png");
+    background-image: url("foto2.png");
     background-size: 100%;
     box-shadow: 5px  5px 10px black;
     z-index: 3;
@@ -142,7 +142,7 @@ html,  body {
 }
 
 #resumo{
-    background-image: url("imagens/fotoSobre.png");
+    background-image: url("fotoSobre.png");
     background-size: 105%;
     box-shadow: 5px 5px 10px black;
     z-index: 2;
@@ -183,7 +183,7 @@ html,  body {
 }
 
 #cursos{
-    background-image: url("imagens/corsosFoto.png");
+    background-image: url("corsosFoto.png");
     background-size: 100%;
     box-shadow: 5px 5px 10px black;
     z-index: 1;
@@ -196,7 +196,7 @@ html,  body {
     text-decoration: none;
     font-family: Handlee, cursive;
     font-size: 40pt;
-    color:#6D6D6D;
+    color:#6D6D6D
 }
 
 #textoCursos{
@@ -223,7 +223,7 @@ html,  body {
 }
 
 #contato {
-    background-image: url("imagens/fotoContato.png");
+    background-image: url("fotoContato.png");
     background-size: 107%;
     box-shadow: 5px 5px 10px black ;
 }
