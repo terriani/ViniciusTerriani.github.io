@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-BR">
+    <meta charset="UTF-8">
+    <title>Olá Mundo :D</title>
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 2000);
+            });
+        });
+    </script>
+    <link href="estilo.css" rel="stylesheet" media="screen"/>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#home" class="scroll" data-speed="15">Home</a></li>
+            <li><a href="#sobre" class="scroll" data-speed="15">Quem Sou Eu</a></li>
+            <li><a href="#resumo" class="scroll">Resumo</a></li>
+            <li><a href="#cursos" class="scroll">Cursos</a></li>
+            <li><a href="#contato" class="scroll">Contato</a></li>
+        </ul>
+    </nav>
+
+<div id="home" class="paralax">
+    <h1 id="hello">{ "Hello World" }</h1>
+</div>
+<div id="sobre" class="paralax">
+    <h1 id="apresentacao">Olá!</h1>
+    <div id="fotoPessoal">
+        <img src="imagens/FotoSite.jpg">
+    </div>
+    <h2 id="textoApresentacao"><p>Eu sou, Vinicius Terriani.</h2>
+    <h2 id="textoApresentacao1">&nbsp;&nbsp;&nbsp;Um estudante de sistemas de informação,<br/>
+        amante da natureza, de bons livros e bons vinhos,<br/> que decidiu aventurar-se no incrível mundo<br/>
+        da programação e da tecnologia.</h2>
+</div>
+<div id="resumo" class="paralax">
+    <h1 id="conhecimento">Meus Conhecimentos...</h1>
+    <h2 id="textoResumo">&nbsp;&nbsp;&nbsp;&nbsp;Cursando o sétimo semestre de <a href="http://www.fals.com.br/graduacao/sistemas-de-informacao/sobre-o-curso.html" target="_blank"> Sistemas de Informação</a><br/> na <a href="http://www.fals.com.br/" target="_blank"> FALS</a>, Faculdade do Litoral Sul
+        Paulista, possuo<br/> conhecimentos básicos em programação,<br/> nas linguagens:
+        C++, Python, PHP, HTML5,<br/> CSS3, SQL, PL/SQL e Java.
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;Estou à procura de uma oportunidade de estágio<br/> para poder colocar
+        em prática tudo oque eu aprendi<br/> e assim mergulhar de cabeça no mundo<br/> do desenvolvimento.
+    </h2>
+</div>
+<div id="cursos" class="paralax">
+    <h1 id="meusCursos">Meus Cursos...</h1>
+    <h2 id="textoCursos">
+        HTML5 - Curso online sobre HTML5, CSS3, E JAVASCRIPT,<br/> ministrado por <a href="http://www.cursoemvideo.com/course/curso-de-html5/" target="_blank"> CursoEmVideo.com</a>, com duração de 40 horas.<br/>
+        HTML5 - Curso online sobre HTML5 homologado pela W3C<br/> e ministrado por <a href="https://www.microsoftvirtualacademy.com/pt-pt/training-courses/html5-homologado-pelo-w3c-8551" target="_blank"> Microsoft Virtual Academy</a>.<br/>
+        C++ Básico - Curso online sobre C++, ministrado por<br/> <a href="https://www.treinaweb.com.br/curso/linguagem-cpp-basico" target="_blank"> TreinaWeb.com/C++Basico</a>, com duração de 24 horas.<br/>
+        C++ Intermediário - Curso online sobre C++, ministrado por<br/> <a href="https://www.treinaweb.com.br/curso/linguagem-cpp-intermediario" target="_blank">  TreinaWeb.com/C++Intermediario</a>, com duração de 32 horas.<br/>
+        PYTHON Básico - Curso online sobre Python, ministrado por<br/> <a href="https://www.treinaweb.com.br/curso/python-basico" target="_blank"> TreinaWeb.com/Python-Básico</a>, com duração de 24 horas.<br/>
+        PYTHON intermediário - Curso online sobre Python, ministrado<br/> por <a href="https://www.treinaweb.com.br/curso/python-intermediario" target="_blank"> TreinaWeb.com/Python-Intermediário</a>, com duração de 32 horas.<br/>
+        DEV Oracle Completo - Curso online sobre PL/SQL, ministrado<br/> por <a href="https://www.treinaweb.com.br/curso/oracle-desenvolvedor"  target="_blank">TreinaWeb.com/DevOracle</a>, com duração de 32 horas.<br/>
+    </h2>
+</div>
+<div id="contato" class="paralax">
+    <h1 id="textoContato">Estou esperando por você...</h1>
+    <div id="quadroContato">
+        <div id="textoMidiasSociais">
+            <div id="icone">
+                <a  id="iconeface" href="https://www.facebook.com/viny.terriani" target="_blank"><img src="imagens/facebook29(5).png">Facebook Vinicius Terriani</a>
+                <a  id="iconelinkedin" href="https://br.linkedin.com/pub/vinicius-terriani/6a/396/6a8" target="_blank"><img src="imagens/linkedin9.png">Vinicius Terriani</a>
+                <a id="iconeemail" href="http://www.hotmail.com" target="_blank"><img  src="imagens/arroba15.png">vinicius.terriani@hotmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
