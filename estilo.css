@@ -1,0 +1,276 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html,  body {
+     height: 100%;
+}
+
+
+#menu  ul{
+    padding: 0;
+    margin-left: 32px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    list-style: none;
+    background-color: #ededed;
+    text-align: center;
+    width: 95%;
+    position: fixed;
+    box-shadow: 3px 3px 8px black;
+    z-index: 6;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+
+#menu ul li a{
+    padding: 20px 60px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19pt;
+    color: #333;
+    border-bottom:3px solid #EDEDED;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #333;
+    border-bottom:3px solid cornflowerblue;
+    transition: 1s;
+}
+
+.paralax{
+    font-family: 'Elsie', cursive;
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    transform-style: inherit;
+    /*text-shadow:0 0 10px rgba(0,0,0,0.7);*/
+
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#home{
+    background-image: url("imagens/imagem_principal.png");
+    background-size: 100%;
+    box-shadow: 5px 5px 10px black;
+    z-index: 5;
+}
+
+#hello{
+    padding-top: 250px;
+    text-align: center;
+    height: 100px;
+    color: powderblue;
+    font-size: 60pt;
+    transition: 4s;
+}
+
+#hello:hover{
+    font-size: 90pt;
+    transition: 6s;
+}
+
+
+#sobre{
+    background-image: url("imagens/foto2.png");
+    background-size: 100%;
+    box-shadow: 5px  5px 10px black;
+    z-index: 3;
+}
+
+#apresentacao{
+    padding-top: 120px;
+    padding-left: 270px;
+    text-align: left;
+    height: 100px;
+    color: #363636;
+    font-size: 60pt;
+    font-family: 'Handlee', cursive;
+
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+#fotoPessoal{
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-left: 10px;
+    margin-top: -110px;
+    border: hidden;
+    float: left;
+    transition: 1.5s;
+    z-index: 4;
+}
+
+#fotoPessoal:hover{
+    transform: /*rotate(10deg)*/ scale(1.1);
+    transition: 1.5s;
+    //box-shadow: 5px 0 10px black;
+}
+
+
+#textoApresentacao {
+    padding: 15px 30px;
+    padding-left: 50px;
+    margin-top: 100px;
+    font-size: 30pt;
+    color: #363636;
+    font-family: 'Handlee', cursive;
+}
+
+#textoApresentacao1 {
+    padding: 25px 40px;
+    padding-top: 15px;
+    font-size: 25pt;
+    color: #363636;
+    font-family: 'Handlee', cursive;
+}
+
+#resumo{
+    background-image: url("imagens/fotoSobre.png");
+    background-size: 105%;
+    box-shadow: 5px 5px 10px black;
+    z-index: 2;
+}
+
+#conhecimento {
+    padding-top: 100px;
+    padding-left: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Handlee', cursive;
+    font-size: 40pt;
+    color: #000;
+}
+
+#textoResumo{
+    padding-top: 20px;
+    padding-left: 20px;
+    color:#1C1C1C;
+    font-family: 'Handlee', cursive;
+    text-align: left;
+    font-size: 26pt;
+}
+
+#textoResumo a{
+    color: darkblue;
+    font-style: oblique;
+    font-family: 'Handlee', cursive;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+#textoResumo a:hover{
+    color: darkred;
+    font-size: 33pt;
+    text-decoration: underline;
+    transition: 1.5s;
+}
+
+#cursos{
+    background-image: url("imagens/corsosFoto.png");
+    background-size: 100%;
+    box-shadow: 5px 5px 10px black;
+    z-index: 1;
+}
+
+#meusCursos{
+    padding-top: 100px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+    font-family: Handlee, cursive;
+    font-size: 40pt;
+    color:#6D6D6D;
+}
+
+#textoCursos{
+    padding-top: 20px;
+    line-height: 32px;
+    padding-left: 20px;
+    color: #B5B5B5;
+    font-family: 'Handlee', cursive;
+    text-align: left;
+    font-size: 16pt;
+}
+
+#cursos a {
+    text-decoration: none;
+    color: #6D6D6D;
+    transition: 1s
+}
+
+#cursos a:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+    font-size: 25pt;
+    transition: 1.5s;
+}
+
+#contato {
+    background-image: url("imagens/fotoContato.png");
+    background-size: 107%;
+    box-shadow: 5px 5px 10px black ;
+}
+
+#textoContato{
+    padding-top: 100px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Lobster', sans-serif;
+    font-size: 60pt;
+    color:#fff;
+}
+
+#quadroContato{
+    width: 100%;
+    background-color: #333333;
+    margin-top: 26%;
+    opacity: 0.6;
+    transition: 1s;
+    box-shadow: 3px 6px 8px black;
+}
+
+#textoMidiasSociais a{
+    margin-top: 0;
+    padding: 20px;
+    font-size: 18pt;
+    color: #FFFFFF;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#quadroContato:hover{
+    opacity: 0.9;
+    transition: 1s;
+}
+
+#icone{
+    padding: 10px;
+    padding-left: 12%;
+}
+
+#icone a{
+     text-decoration: none;   
+}
+
+#icone a:hover{
+    color: cornflowerblue;
+    transition: 1s;
+    text-decoration: none;
+}
