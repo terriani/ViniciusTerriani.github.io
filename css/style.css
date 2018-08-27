@@ -19,7 +19,6 @@ main {
  width: 200px;
  padding: 0;
  background: #f9f9f9;
- box-shadow: 3px 3px 15px #777;
  border-radius: 50%;
  transform: rotate(5deg);
 }
@@ -30,4 +29,10 @@ main {
 
 .title{
   text-align: center
+}
+
+.btn-up{
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
 }
