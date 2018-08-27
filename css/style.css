@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #f9f9f9;
+  }
+main {
+  flex: 1 0 auto;
+}
+
+.brand-logo{
+  font-family: 'Pattaya', sans-serif;
+}
+
+.intro-img{
+ margin-top: 50px;
+ width: 220px;
+ padding: 0;
+ background: #f9f9f9;
+ box-shadow: 3px 3px 15px #777;
+ border-radius: 50%;
+ transform: rotate(5deg);
+}
+
+.text-intro{
+  margin-top: 15%;
+}
+
+.title{
+  text-align: center
+}

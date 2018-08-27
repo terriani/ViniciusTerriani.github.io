@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Ola mundo</h1>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title of the document</title>
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pattaya" rel="stylesheet">
+    <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+    <style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="grey darken-4">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo"> Muito Prazer</a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Sobre mim</a></li>
+              <li><a href="#">Competências</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Contatos</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+              <li>
+                <div class="userView">
+                  <div class="background">
+                    <img src="img/mosaic-2790344_640.png" alt="Background Sidenav">
+                  </div>
+                  <a href="#!user"><img class="circle" src="img/me-circle.jpg" alt="User Image Sidenav"></a>
+                  <a href="#!name"><span class="white-text name">Vinicius Terriani</span></a>
+                  <a href="#!email"><span class="white-text email">viniterriani.vt@gmail.com</span></a>
+                </div>
+              </li>
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item2</a></li>
+              <li><a href="#">item3</a></li>
+              <li><a href="#">item4</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Your content here -->
+      <div class="row">
+        <h2 class="title">Um pouco sobre mim.</h1>
+        <div class="col s12 m6 center-align">
+          <img src="img/me-circle.jpg" alt="" class="responsive-img intro-img"/>
+        </div>
+        <div class="col s12 m6 left-align pull-m1">
+          <p class="text-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde vitae ut ad quisquam corrupti veniam placeat reprehenderit temporibus aut ratione earum, qui deleniti ex ab impedit sint consequuntur dolore.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8 l6">
+            <h5 class="white-text">Contatos</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2017 Copyright <strong> Vinicius Terriani</strong>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $("document").ready(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
+  </body>
 </html>
