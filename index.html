@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Title of the document</title>
+    <title>Vinicius Terriani</title>
     <!-- Material Icon CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS CDN -->
@@ -19,16 +19,17 @@
   </head>
   <body>
     <header>
+      <div class="">
       <nav class="grey darken-4" id="top">
         <div class="nav-wrapper">
           <div class="container">
             <a href="#" class="brand-logo"> Muito Prazer</a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#">Sobre mim</a></li>
-              <li><a href="#">Competências</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Contatos</a></li>
+              <li><a href="#top" class="scrollspy">Sobre mim</a></li>
+              <li><a href="#skils" class="scrollspy">Competências</a></li>
+              <li><a href="#" class="scrollspy">Projetos</a></li>
+              <li><a href="#" class="scrollspy">Contatos</a></li>
             </ul>
             <ul class="side-nav" id="mobile-menu">
               <li>
@@ -41,39 +42,95 @@
                   <a href="#!email"><span class="white-text email">viniterriani.vt@gmail.com</span></a>
                 </div>
               </li>
-              <li><a href="#">item1</a></li>
-              <li><a href="#">item2</a></li>
-              <li><a href="#">item3</a></li>
-              <li><a href="#">item4</a></li>
+              <li><a href="#top" class="scrollspy">Sobre min</a></li>
+              <li><a href="#skils" class="scrollspy">Competências</a></li>
+              <li><a href="#" class="scrollspy">Projetos</a></li>
+              <li><a href="#" class="scrollspy">Contatos</a></li>
             </ul>
           </div>
         </div>
       </nav>
+    </div>
     </header>
-    <main>
+    <main class="main">
       <!-- Your content here -->
+      <div class="about-me">
       <div class="row">
-        <h2 class="title">Um pouco sobre mim.</h1>
         <div class="col s12 m6 center-align">
           <img src="img/me-circle.jpg" alt="" class="responsive-img intro-img z-depth-5"/>
         </div>
         <div class="col s12 m6 left-align pull-m1">
-          <p class="text-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde vitae ut ad quisquam corrupti veniam placeat reprehenderit temporibus aut ratione earum, qui deleniti ex ab impedit sint consequuntur dolore.</p>
+          <p class="text-intro"> <span class="title">Sobre mim</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde vitae ut ad quisquam corrupti veniam placeat reprehenderit temporibus aut ratione earum, qui deleniti ex ab impedit sint consequuntur dolore.</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col m8 s12 push-m2">
+      <div class="skils" id="skils">
+          <p class="text-skils"> <span class="title-skils">Competências</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea illo amet labore, consequuntur sunt necessitatibus saepe corrupti enim officia alias doloribus nesciunt reiciendis nam incidunt inventore commodi fugit? Asperiores? </p>
+      </div>
+      <i class="skil">PHP</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 50%"></div>
+      </div>
+      <i class=" skil">MySQL</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 30%"></div>
+      </div>
+      <i class=" skil">Laravel</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 10%"></div>
+      </div>
+      <i class=" darken-4 skil">Composer</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 20%"></div>
+      </div>
+      <i class=" darken-4 skil">JavaScript</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 10%"></div>
+      </div>
+      <i class=" darken-4 skil">jQuery</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 20%"></div>
+      </div>
+      <i class=" darken-4 skil">HTML5</i>
+      <div class="progress ">
+          <div class="determinate pink" style="width: 60%"></div>
+      </div>
+      <i class=" darken-4 skil">CSS3</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 40%"></div>
+      </div>
+      <i class=" darken-4 skil">Bootstrap</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 40%"></div>
+      </div>
+      <i class=" darken-4 skil">Materialize</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 30%"></div>
+      </div>
+      <i class=" darken-4 skil">Git</i>
+      <div class="progress">
+          <div class="determinate pink" style="width: 40%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m8 push-m2">
+        <div class="projects" id="projects">
+            <p class="text-projects"> <span class="title-projects">Pojetos</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea illo amet labore, consequuntur sunt necessitatibus saepe corrupti enim officia alias doloribus nesciunt reiciendis nam incidunt inventore commodi fugit? Asperiores? </p>
+        </div>
+        <a href="http://ContaControlada.esy.es" target="blank">ContaControlada</a><br>
+        <a href="http://Cadastronline.16mb.com" target="blank">CadastrOnline</a>
+        
+    </div>
+  </div>
     </main>
     <footer class="page-footer grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m8 l6">
-            <h5 class="white-text">Contatos</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-        </div>
-      </div>
       <div class="footer-copyright">
         <div class="container">
-          © 2017 Copyright <strong> Vinicius Terriani</strong>
+          © 2017 Copyright <strong>   -  Vinicius Terriani</strong>
         </div>
       </div>
     </footer>
@@ -85,7 +142,30 @@
     <script>
       $("document").ready(function(){
         $(".button-collapse").sideNav();
+        $(".scrollspy").scrollSpy();
       });
+
+      $(".btn-up").fadeOut();
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 500){
+          $('.btn-up').fadeIn();
+          $(".main").css("background-color", "#222");
+          $(".main").css("color", "#f9f9f9");
+          $(".progress").css("background-color", "#222");
+        }
+        else{
+          $('.btn-up').fadeOut();
+          $(".main").css("background-color", "#f9f9f9");
+          $(".main").css("color", "#222");
+          $(".progress").css("background-color", "#f9f9f9");
+        }
+        if($(document).scrollTop() > 1450){
+          $(".main").css("background-color", "#f9f9f9");
+          $(".main").css("color", "#222");
+          $(".progress").css("background-color", "#f9f9f9");
+        }
+      });
+      
     </script>
   </body>
 </html>

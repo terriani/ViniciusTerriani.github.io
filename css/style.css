@@ -14,9 +14,13 @@ main {
   font-family: 'Pattaya', sans-serif;
 }
 
+.about-me{
+  
+}
+
 .intro-img{
  margin-top: 50px;
- width: 200px;
+ width: 250px;
  padding: 0;
  background: #f9f9f9;
  border-radius: 50%;
@@ -25,14 +29,63 @@ main {
 
 .text-intro{
   margin-top: 15%;
+  margin-left: 10px;
+  border-left: 3px solid #666;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14pt;
 }
 
 .title{
-  text-align: center
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22pt;
 }
 
 .btn-up{
   position: fixed;
   right: 15px;
   bottom: 30px;
+}
+
+.skils{
+  margin-top: 100px;
+  padding: 40px 40px 10px 40px;
+  border-right: 3px solid #666;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14pt;
+  margin-bottom: 100px;
+  margin-right: 10px;
+}
+
+.title-skils{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22pt
+}
+
+.skil{
+  font-size: 15pt;
+}
+
+.progress{
+  height: 8px;
+}
+
+.projects{
+  margin-top: 100px;
+  padding: 40px 40px 10px 40px;
+  border-left: 3px solid #666;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14pt;
+  margin-bottom: 100px;
+  margin-left: 10px;
+}
+
+.title-projects{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 22pt
 }
