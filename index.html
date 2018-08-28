@@ -28,7 +28,7 @@
             <ul class="right hide-on-med-and-down">
               <li><a href="#top" class="scrollspy">Sobre mim</a></li>
               <li><a href="#skils" class="scrollspy">Competências</a></li>
-              <li><a href="#" class="scrollspy">Projetos</a></li>
+              <li><a href="#projects" class="scrollspy">Projetos</a></li>
               <li><a href="#" class="scrollspy">Contatos</a></li>
             </ul>
             <ul class="side-nav" id="mobile-menu">
@@ -44,7 +44,7 @@
               </li>
               <li><a href="#top" class="scrollspy">Sobre min</a></li>
               <li><a href="#skils" class="scrollspy">Competências</a></li>
-              <li><a href="#" class="scrollspy">Projetos</a></li>
+              <li><a href="#projects" class="scrollspy">Projetos</a></li>
               <li><a href="#" class="scrollspy">Contatos</a></li>
             </ul>
           </div>
@@ -121,9 +121,10 @@
         <div class="projects" id="projects">
             <p class="text-projects"> <span class="title-projects">Pojetos</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea illo amet labore, consequuntur sunt necessitatibus saepe corrupti enim officia alias doloribus nesciunt reiciendis nam incidunt inventore commodi fugit? Asperiores? </p>
         </div>
-        <a href="http://ContaControlada.esy.es" target="blank">ContaControlada</a><br>
-        <a href="http://Cadastronline.16mb.com" target="blank">CadastrOnline</a>
-        
+       <div class="project-area"> <a href="http://ContaControlada.esy.es" target="blank" class="title-projects">ContaControlada</a><p class="text-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error numquam nihil fugiat cum a corrupti? Repudiandae delectus ducimus eligendi! Vero atque voluptatibus asperiores necessitatibus blanditiis eligendi praesentium. Eligendi, provident.</p><a href="https://github.com/terriani/ContaControlada" target="blank" class="git">GitHub</a></div>
+       <div class="project-area"> <a href="http://CadastrOnline.16mb.com" target="blank" class="title-projects">CadastrOnline</a><p class="text-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error numquam nihil fugiat cum a corrupti? Repudiandae delectus ducimus eligendi! Vero atque voluptatibus asperiores necessitatibus blanditiis eligendi praesentium. Eligendi, provident.</p><a href="https://github.com/terriani/CadastrOnline" target="blank" class="git">GitHub</a></div>        
+       <div class="project-area"> <a href="https://github.com/terriani/estudosPhpPoo" target="blank" class="title-projects">Estudos</a><p class="text-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error numquam nihil fugiat cum a corrupti? Repudiandae delectus ducimus eligendi! Vero atque voluptatibus asperiores necessitatibus blanditiis eligendi praesentium. Eligendi, provident.</p><a href="https://github.com/terriani/estudosPhpPoo" target="blank" class="git">GitHub</a></div>        
+       <div class="project-area"> <a href="https://github.com/terriani/Vinicius_Terriani" target="blank" class="title-projects">Código fonte deste site</a><p class="text-projects">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error numquam nihil fugiat cum a corrupti? Repudiandae delectus ducimus eligendi! Vero atque voluptatibus asperiores necessitatibus blanditiis eligendi praesentium. Eligendi, provident.</p><a href="https://github.com/terriani/Vinicius_Terriani" target="blank" class="git">GitHub</a></div>        
     </div>
   </div>
     </main>
@@ -146,8 +147,11 @@
       });
 
       $(".btn-up").fadeOut();
-      $(window).scroll(function(){
-        if($(document).scrollTop() > 500){
+     
+      if($(window).width() < 780){
+        //regra para mudança de cor em telas menores que a de um celular
+        $(window).scroll(function(){
+        if($(document).scrollTop() > 700){
           $('.btn-up').fadeIn();
           $(".main").css("background-color", "#222");
           $(".main").css("color", "#f9f9f9");
@@ -159,13 +163,36 @@
           $(".main").css("color", "#222");
           $(".progress").css("background-color", "#f9f9f9");
         }
-        if($(document).scrollTop() > 1450){
+        if($(document).scrollTop() > 1900){
           $(".main").css("background-color", "#f9f9f9");
           $(".main").css("color", "#222");
           $(".progress").css("background-color", "#f9f9f9");
         }
       });
-      
+      }else{
+         //regra para mudança de cor em telas maiores que a de um celular
+         $(window).scroll(function(){
+        if($(document).scrollTop() > 400){
+          $('.btn-up').fadeIn();
+          $(".main").css("background-color", "#222");
+          $(".main").css("color", "#f9f9f9");
+          $(".progress").css("background-color", "#222");
+        }
+        else{
+          $('.btn-up').fadeOut();
+          $(".main").css("background-color", "#f9f9f9");
+          $(".main").css("color", "#222");
+          $(".progress").css("background-color", "#f9f9f9");
+        }
+        if($(document).scrollTop() > 1400){
+          $(".main").css("background-color", "#f9f9f9");
+          $(".main").css("color", "#222");
+          $(".progress").css("background-color", "#f9f9f9");
+        }
+      });
+      }
+
+
     </script>
   </body>
 </html>

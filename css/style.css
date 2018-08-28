@@ -65,6 +65,7 @@ main {
 
 .skil{
   font-size: 15pt;
+  margin-left: 20px;
 }
 
 .progress{
@@ -85,4 +86,21 @@ main {
   text-align: center;
   font-weight: bolder;
   font-size: 22pt
+}
+
+.text-projects{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14pt;
+}
+
+.project-area{
+  border-right: 3px solid cornflowerblue;
+  padding: 40px 40px 40px 40px;
+  margin-right: 10px;
+}
+
+.git{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bolder;
 }
