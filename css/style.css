@@ -4,7 +4,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #f9f9f9;
+  background: #f3f3f3;
   }
 main {
   flex: 1 0 auto;
@@ -15,9 +15,10 @@ main {
 }
 
 
+
 .intro-img{
- margin-top: 50px;
- width: 250px;
+ margin-top: 150px;
+ width:280px;
  padding: 0;
  background: #f9f9f9;
  border-radius: 50%;
@@ -25,9 +26,9 @@ main {
 }
 
 .text-intro{
-  margin-top: 15%;
+  margin-top: 27%;
   margin-left: 10px;
-  border-left: 3px solid #666;
+  border-left: 3px solid #888;
   padding-left: 40px;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -50,7 +51,7 @@ main {
 .skils{
   margin-top: 100px;
   padding: 40px 40px 10px 40px;
-  border-right: 3px solid #666;
+  border-right: 3px solid #888;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
   margin-bottom: 100px;
@@ -75,7 +76,7 @@ main {
 .projects{
   margin-top: 100px;
   padding: 40px 40px 10px 40px;
-  border-left: 3px solid #666;
+  border-left: 3px solid #888;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
   margin-bottom: 100px;
@@ -104,3 +105,24 @@ main {
   font-size: 12pt;
   font-weight: bolder;
 }
+
+.page-footer{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13pt;
+}
+
+.icons{
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+    .intro-img{
+      margin-top: 50px;
+    }
+
+    .text-intro{
+      margin-top: 15%;
+    }
+  }
+ 
+  
