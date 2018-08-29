@@ -29,8 +29,8 @@ main {
   margin-top: 27%;
   margin-left: 10px;
   border-left: 3px solid #888;
-  padding-left: 40px;
-  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-bottom: 20px;
   padding-top: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
@@ -50,12 +50,13 @@ main {
 
 .skils{
   margin-top: 100px;
-  padding: 40px 40px 10px 40px;
+  padding: 40px 30px 40px 20px;
   border-right: 3px solid #888;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
   margin-bottom: 100px;
   margin-right: 10px;
+  text-align: right;
 }
 
 .title-skils{
@@ -70,12 +71,12 @@ main {
 }
 
 .progress{
-  height: 8px;
+  height: 10px;
 }
 
 .projects{
   margin-top: 100px;
-  padding: 40px 40px 10px 40px;
+  padding: 40px 20px 50px 40px;
   border-left: 3px solid #888;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
@@ -96,7 +97,7 @@ main {
 
 .project-area{
   border-right: 3px solid cornflowerblue;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 20px 40px 20px;
   margin-right: 10px;
 }
 
@@ -115,6 +116,11 @@ main {
   font-size: 2rem;
 }
 
+hr{
+  margin: 0 30% 0 30%;
+  color: red;
+}
+
 @media only screen and (max-width: 780px) {
     .intro-img{
       margin-top: 50px;
@@ -123,6 +129,32 @@ main {
     .text-intro{
       margin-top: 15%;
     }
+
+    .skils{
+      padding: 0px 30px 0px 20px;
+      margin-top: 50px;
+    }
+
+    .progress{
+      height: 12px;
+    }
+
+    .project-area{
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .projects{
+      padding: 40px 20px 20px 30px;
+
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
+    .text-intro{
+      margin-left: 50px;
+    }
+
   }
  
   
