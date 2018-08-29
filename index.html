@@ -72,7 +72,7 @@
       </div>
       <i class="skil">PHP</i>
       <div class="progress">
-          <div class="determinate pink" style="width: 50%"></div>
+          <div class="determinate pink" style="width: 70%;"></div>
       </div>
       <i class=" skil">MySQL</i>
       <div class="progress">
@@ -151,6 +151,7 @@
       });
 
       $(".btn-up").fadeOut();
+      $(".skils, .skil, .progress, .projects, .project-area").css("opacity", 0);
      
       if($(window).width() < 780){
         //regra para mudança de cor em telas menores que a de um celular
@@ -160,27 +161,40 @@
         }else{
           $('.btn-up').fadeOut();
         }
-        if($(document).scrollTop() > 800){
+        if($(document).scrollTop() > 600){
           $(".main").css("background-color", "#333");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#f3f3f3");
           $(".progress").css("background-color", "#333");
           $(".progress").css("transition", ".5s");
+          $(".skils").css("opacity", 1);
+          $(".skils").css("transition", ".5s");
         }
         else{
           
           $(".main").css("background-color", "#f3f3f3");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#333");
           $(".progress").css("background-color", "#f3f3f3");
           $(".progress").css("transition", ".5s");
         }
+        if($(document).scrollTop() > 1100){
+          $(".skil, .progress").css("opacity", 1);
+          $(".skil").css("transition", ".2s");
+          $(".progress").css("transition", "1s"); 
+        }
         if($(document).scrollTop() > 2000){
           $(".main").css("background-color", "#f3f3f3");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#333");
           $(".progress").css("background-color", "#f3f3f3");
           $(".progress").css("transition", ".5s");
+          $(".projects").css("opacity", 1);
+          $(".projects").css("transition", ".5s");
+        }
+        if($(document).scrollTop() > 2500){
+          $(".project-area").css("opacity", 1);
+          $(".project-area").css("transition", ".5s");
         }
       });
       }else{
@@ -193,24 +207,37 @@
         }   
         if($(document).scrollTop() > 530){
           $(".main").css("background-color", "#333");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#f3f3f3");
           $(".progress").css("background-color", "#333");
-          $(".progress").css("transition", ".5s");
+          $(".progress").css("transition", ".2s");
+          $(".skils").css("opacity", 1);
+          $(".skils").css("transition", ".5s");
         }
         else{
           $(".main").css("background-color", "#f3f3f3");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#222");
           $(".progress").css("background-color", "#f3f3f3");
           $(".progress").css("transition", ".5s");
         }
-        if($(document).scrollTop() > 1700){
+        if($(document).scrollTop() > 900){
+          $(".skil, .progress").css("opacity", 1);
+          $(".skil").css("transition", ".2s");
+          $(".progress").css("transition", "1s"); 
+        }
+        if($(document).scrollTop() > 1600){
           $(".main").css("background-color", "#f3f3f3");
-          $(".main").css("transition", ".5s");
+          $(".main").css("transition", ".2s");
           $(".main").css("color", "#333");
           $(".progress").css("background-color", "#f3f3f3");
           $(".progress").css("transition", ".5s");
+          $(".projects").css("opacity", 1);
+          $(".projects").css("transition", ".5s");
+        }
+        if($(document).scrollTop() > 2000){
+          $(".project-area").css("opacity", 1);
+          $(".project-area").css("transition", ".5s");
         }
       });
       }
