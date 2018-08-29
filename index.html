@@ -22,7 +22,7 @@
       <div class="">
       <nav class="grey darken-4" id="top">
         <div class="nav-wrapper">
-          <div class="container">
+          <div class="container ri">
             <a href="#" class="brand-logo"> Muito Prazer</a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
@@ -178,20 +178,23 @@
         if($(document).scrollTop() > 1000){
           $(".skil, .progress").css("opacity", 1);
           $(".skil").css("transition", ".2s");
-          $(".progress").css("transition", "1s"); 
+          $(".progress").css("transition", "5s"); 
         }
-        if($(document).scrollTop() > 1900){
+        if($(document).scrollTop() > 1850){
           $(".main").css("background-color", "#f3f3f3");
           $(".main").css("transition", ".2s");
           $(".main").css("color", "#333");
           //$(".progress").css("background-color", "#f3f3f3");
+         
+        }
+        if($(document).scrollTop() > 1950){
           $(".progress").css("transition", ".5s");
           $(".projects").css("opacity", 1);
           $(".projects").css("transition", ".5s");
         }
         if($(document).scrollTop() > 2300){
           $(".project-area").css("opacity", 1);
-          $(".project-area").css("transition", ".5s");
+          $(".project-area").css("transition", "1s");
         }
       });
       }else{
@@ -220,8 +223,8 @@
         }
         if($(document).scrollTop() > 660){
           $(".skil, .progress").css("opacity", 1);
-          //$(".skil").css("transition", ".2s");
-          $(".progress").css("transition", "1s"); 
+          $(".skil").css("transition", ".2s");
+          $(".progress").css("transition", "5s");
         }
         if($(document).scrollTop() > 1400){
           $(".main").css("background-color", "#f3f3f3");

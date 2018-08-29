@@ -157,7 +157,7 @@ hr{
     }
 
     .drag-target{
-      min-width: 50vw !important;
+      min-width: 10vw !important;
     }
   }
 
