@@ -1,3 +1,5 @@
+
+//executa ao carregar a pagina
 $("document").ready(function(){
     $(".button-collapse").sideNav();
     $(".scrollspy").scrollSpy();
@@ -22,7 +24,7 @@ if(height > width){
     }else{
       $('.btn-up').fadeOut();
     }
-    if($(document).scrollTop() > 700){
+    if($(document).scrollTop() > 500){
       $(".main").css("background-color", "#333");
       $(".main").css("transition", ".2s");
       $(".main").css("color", "#f3f3f3");
