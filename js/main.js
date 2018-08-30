@@ -34,7 +34,7 @@ if(height > width){
       $(".skils").css("transition", ".5s");
     }
     else if($(document).scrollTop() < 450){
-      
+      wi
       $(".main").css("background-color", "#f3f3f3");
       $(".main").css("transition", ".2s");
       $(".main").css("color", "#333");
@@ -44,6 +44,17 @@ if(height > width){
     if($(document).scrollTop() > 1100){
       $(".skil, .progress").css("opacity", 1);
       $(".skil").css("transition", ".2s");
+      $(".progress-php").css("width", "70%");
+      $(".progress-mysql").css("width", "30%");
+      $(".progress-laravel").css("width", "10%");
+      $(".progress-composer").css("width", "20%");
+      $(".progress-javascript").css("width", "10%");
+      $(".progress-jquery").css("width", "10%");
+      $(".progress-html").css("width", "60%");
+      $(".progress-css").css("width", "40%");
+      $(".progress-bootstrap").css("width", "40%");
+      $(".progress-materialize").css("width", "30%");
+      $(".progress-git").css("width", "40%");
       $(".progress").css("transition", "5s"); 
     }
     if($(document).scrollTop() > 1950){
@@ -98,9 +109,20 @@ if(height > width){
       $(".progress").css("transition", ".5s");
     }
     if($(document).scrollTop() > 850){
-      $(".skil, .progress").css("opacity", 1);
-      $(".skil").css("transition", ".2s");
-      $(".progress").css("transition", "5s"); 
+        $(".skil, .progress").css("opacity", 1);
+        $(".skil").css("transition", ".2s");
+        $(".progress-php").css("width", "70%");
+        $(".progress-mysql").css("width", "30%");
+        $(".progress-laravel").css("width", "10%");
+        $(".progress-composer").css("width", "20%");
+        $(".progress-javascript").css("width", "10%");
+        $(".progress-jquery").css("width", "10%");
+        $(".progress-html").css("width", "60%");
+        $(".progress-css").css("width", "40%");
+        $(".progress-bootstrap").css("width", "40%");
+        $(".progress-materialize").css("width", "30%");
+        $(".progress-git").css("width", "40%");
+        $(".progress").css("transition", "5s");
     }
     if($(document).scrollTop() > 1600){
       $(".main").css("background-color", "#f3f3f3");
@@ -151,9 +173,20 @@ if(height > width){
       //$(".progress").css("transition", ".5s");
     }
     if($(document).scrollTop() > 660){
-      $(".skil, .progress").css("opacity", 1);
-      $(".skil").css("transition", ".2s");
-      $(".progress").css("transition", "5s");
+        $(".skil, .progress").css("opacity", 1);
+        $(".skil").css("transition", ".2s");
+        $(".progress-php").css("width", "70%");
+        $(".progress-mysql").css("width", "30%");
+        $(".progress-laravel").css("width", "10%");
+        $(".progress-composer").css("width", "20%");
+        $(".progress-javascript").css("width", "10%");
+        $(".progress-jquery").css("width", "10%");
+        $(".progress-html").css("width", "60%");
+        $(".progress-css").css("width", "40%");
+        $(".progress-bootstrap").css("width", "40%");
+        $(".progress-materialize").css("width", "30%");
+        $(".progress-git").css("width", "40%");
+        $(".progress").css("transition", "5s");
     }
     if($(document).scrollTop() > 1330){
       $(".main").css("background-color", "#f3f3f3");
