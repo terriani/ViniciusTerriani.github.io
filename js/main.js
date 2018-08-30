@@ -4,11 +4,15 @@ $("document").ready(function(){
     $(".button-collapse").sideNav();
     $(".scrollspy").scrollSpy();
     $(".intro-img").css("opacity", 1);
+    $(".intro-img").css("left", "0");
     $(".intro-img").css("transition", "2s");
+    $(".text-intro").css("opacity", 1);
+    $(".text-intro").css("right", "0");
+    $(".text-intro").css("transition", "2s");
   });
 
-  $(".btn-up").fadeOut();
-  $(".skils, .skil, .progress, .projects, .project-area, .intro-img").css("opacity", 0);
+  //$(".btn-up").fadeOut();
+  $(".skils, .skil, .progress, .projects, .project-area, .intro-img, .text-intro, .btn-up").css("opacity", 0);
  
 
   var width = $(window).width();
@@ -19,10 +23,14 @@ if(height > width){
   if($(window).width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
     $(window).scroll(function(){
-    if($(document).scrollTop() > 60){
-      $('.btn-up').fadeIn();
+    if($(document).scrollTop() > 20){
+      $('.btn-up').css("bottom", "30px");
+      $(".btn-up").css("opacity", 1);
+      $(".btn-up").css("transition", "1s");
     }else{
-      $('.btn-up').fadeOut();
+      $('.btn-up').css("opacity", 0);
+      $(".btn-up").css("bottom", "-200px");
+      $(".btn-up").css("transition", "1s");
     }
     if($(document).scrollTop() > 780){
       $(".main").css("background-color", "#333");
@@ -64,9 +72,10 @@ if(height > width){
      
     }
     if($(document).scrollTop() > 2000){
-      $(".progress").css("transition", ".5s");
+      $(".progress").css("transition", "2s");
       $(".projects").css("opacity", 1);
-      $(".projects").css("transition", ".5s");
+      $(".projects").css("left", 0);
+      $(".projects").css("transition", "2s");
     }
     if($(document).scrollTop() > 2300){
       $(".project-area").css("opacity", 1);
@@ -85,10 +94,14 @@ if(height > width){
     if($(window).width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
     $(window).scroll(function(){
-    if($(document).scrollTop() > 60){
-      $('.btn-up').fadeIn();
+    if($(document).scrollTop() > 20){
+      $('.btn-up').css("bottom", "30px");
+      $(".btn-up").css("opacity", 1);
+      $(".btn-up").css("transition", "1s");
     }else{
-      $('.btn-up').fadeOut();
+      $('.btn-up').css("opacity", 0);
+      $(".btn-up").css("bottom", "-200px");
+      $(".btn-up").css("transition", "1s");
     }
     if($(document).scrollTop() > 500){
       $(".main").css("background-color", "#333");
@@ -131,9 +144,10 @@ if(height > width){
      
     }
     if($(document).scrollTop() > 1660){
-      $(".progress").css("transition", ".5s");
+      $(".progress").css("transition", "2s");
       $(".projects").css("opacity", 1);
-      $(".projects").css("transition", ".5s");
+      $(".projects").css("left", 0);
+      $(".projects").css("transition", "2s");
     }
     if($(document).scrollTop() > 2050){
       $(".project-area").css("opacity", 1);
@@ -150,10 +164,14 @@ if(height > width){
   if($(window).width() > 720){
      //regra para mudança de cor em telas maiores que a de um celular
      $(window).scroll(function(){
-    if($(document).scrollTop() > 60){
-      $('.btn-up').fadeIn();
+    if($(document).scrollTop() > 20){
+      $('.btn-up').css("bottom", "30px");
+      $(".btn-up").css("opacity", 1);
+      $(".btn-up").css("transition", "1s");
     }else{
-      $('.btn-up').fadeOut();
+      $('.btn-up').css("opacity", 0);
+      $(".btn-up").css("bottom", "-200px");
+      $(".btn-up").css("transition", "1s");
     }   
     if($(document).scrollTop() > 400){
       $(".main").css("background-color", "#333");
@@ -197,7 +215,8 @@ if(height > width){
     }
     if($(document).scrollTop() > 1480){
       $(".projects").css("opacity", 1);
-      $(".projects").css("transition", ".5s");
+      $(".projects").css("left", 0);
+      $(".projects").css("transition", "2s");
     }
     if($(document).scrollTop() > 1900){
       $(".project-area").css("opacity", 1);

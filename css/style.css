@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background: #f3f3f3;
+  overflow-x: hidden;
   }
 main {
   flex: 1 0 auto;
@@ -17,12 +18,14 @@ main {
 
 
 .intro-img{
+  position: relative;
  margin-top: 150px;
  width:280px;
  padding: 0;
  background: #f9f9f9;
  border-radius: 50%;
  transform: rotate(5deg);
+ left: -100%;
 }
 
 .text-intro{
@@ -34,6 +37,8 @@ main {
   padding-top: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14pt;
+  position: relative;
+  right: -150%;
 }
 
 .title{
@@ -45,7 +50,7 @@ main {
 .btn-up{
   position: fixed;
   right: 15px;
-  bottom: 30px;
+  bottom: -200px;
 }
 
 .skils{
@@ -83,6 +88,8 @@ main {
   font-size: 14pt;
   margin-bottom: 100px;
   margin-left: 10px;
+  position: relative;
+  left: -150%;
 }
 
 .title-projects{
