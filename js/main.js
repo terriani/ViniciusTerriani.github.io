@@ -24,7 +24,7 @@ if(height > width){
     }else{
       $('.btn-up').fadeOut();
     }
-    if($(document).scrollTop() > 550){
+    if($(document).scrollTop() > 590){
       $(".main").css("background-color", "#333");
       $(".main").css("transition", ".2s");
       $(".main").css("color", "#f3f3f3");
