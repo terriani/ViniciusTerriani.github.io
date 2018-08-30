@@ -24,7 +24,7 @@ if(height > width){
     }else{
       $('.btn-up').fadeOut();
     }
-    if($(document).scrollTop() > 600){
+    if($(document).scrollTop() > 780){
       $(".main").css("background-color", "#333");
       $(".main").css("transition", ".2s");
       $(".main").css("color", "#f3f3f3");
@@ -33,7 +33,7 @@ if(height > width){
       $(".skils").css("opacity", 1);
       $(".skils").css("transition", ".5s");
     }
-    else{
+    else if($(document).scrollTop() < 450){
       
       $(".main").css("background-color", "#f3f3f3");
       $(".main").css("transition", ".2s");
@@ -41,7 +41,7 @@ if(height > width){
       //$(".progress").css("background-color", "#f3f3f3");
       $(".progress").css("transition", ".5s");
     }
-    if($(document).scrollTop() > 1000){
+    if($(document).scrollTop() > 1100){
       $(".skil, .progress").css("opacity", 1);
       $(".skil").css("transition", ".2s");
       $(".progress").css("transition", "5s"); 
