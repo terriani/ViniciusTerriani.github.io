@@ -34,7 +34,6 @@ if(height > width){
       $(".skils").css("transition", ".5s");
     }
     else if($(document).scrollTop() < 450){
-      wi
       $(".main").css("background-color", "#f3f3f3");
       $(".main").css("transition", ".2s");
       $(".main").css("color", "#333");
