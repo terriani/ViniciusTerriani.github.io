@@ -53,7 +53,7 @@ if(height > width){
       //$(".progress").css("background-color", "#f3f3f3");
      
     }
-    if($(document).scrollTop() > 1900){
+    if($(document).scrollTop() > 2000){
       $(".progress").css("transition", ".5s");
       $(".projects").css("opacity", 1);
       $(".projects").css("transition", ".5s");
