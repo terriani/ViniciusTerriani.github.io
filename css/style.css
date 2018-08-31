@@ -133,6 +133,7 @@ hr{
 .contact{
   margin: 100px;
   font-size: 25pt;
+  font-weight: bolder;
 }
 
 .name, .email{
@@ -229,6 +230,11 @@ hr{
       margin-left: -50px;
       padding: 40px 20px 20px 30px;
 
+    }
+
+    .contact{
+      font-size: 13pt;
+      font-weight: bolder;
     }
   }
  
