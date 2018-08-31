@@ -17,7 +17,6 @@ main {
 }
 
 
-
 .intro-img{
   position: relative;
  margin-top: 150px;
@@ -45,7 +44,10 @@ main {
 .title{
   text-align: center;
   font-weight: bolder;
-  font-size: 22pt;
+  font-size: 32pt;
+  font-family: 'Pattaya', sans-serif;
+  position: relative;
+  left: 150%;
 }
 
 .btn-up{
@@ -160,6 +162,10 @@ hr{
       margin-top: 50px;
     }
 
+    .title{
+      font-size: 25pt;
+    }
+
     .text-intro{
       margin-top: 15%;
     }
@@ -202,6 +208,10 @@ hr{
   @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
     .text-intro{
       margin-left: 50px;
+    }
+
+    .title{
+      font-size: auto;
     }
 
     .text-intro{

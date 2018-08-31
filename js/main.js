@@ -30,7 +30,8 @@ var msg = $(".msg");
 var contact_title = $(".title-contact");
 var btn_collapse = $(".button-collapse");
 var scrollspy = $(".scrollspy");
-var doc = $("document");
+var doc = $(document);
+var title = $(".title");
 
 
 //executa ao carregar a pagina
@@ -44,6 +45,8 @@ doc.ready(function(){
     text_intro.css("right", "0");
     text_intro.css("transition", "2s");
     body.css("overflow-x", "hidden");
+    title.css("left", 0);
+    title.css("transition", "3s");
   });
  
 
@@ -68,7 +71,7 @@ if(height > width){
   if($(window).width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
     $(window).scroll(function(){
-    if($(document).scrollTop() > 20){
+    if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
@@ -77,7 +80,7 @@ if(height > width){
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
     }
-    if($(document).scrollTop() > 780){
+    if(doc.scrollTop() > 780){
       main.css("background-color", "#333");
       main.css("transition", ".2s");
       main.css("color", "#f3f3f3");
@@ -86,14 +89,14 @@ if(height > width){
       skils.css("opacity", 1);
       skils.css("transition", ".5s");
     }
-    else if($(document).scrollTop() < 450){
+    else if(doc.scrollTop() < 450){
       main.css("background-color", "#f3f3f3");
       main.css("transition", ".2s");
       main.css("color", "#333");
       //$(".progress").css("background-color", "#f3f3f3");
       progress.css("transition", ".5s");
     }
-    if($(document).scrollTop() > 1100){
+    if(doc.scrollTop() > 1100){
       skil.css("opacity", 1);
       progress.css("opacity", 1);
       skil.css("transition", ".2s");
@@ -110,34 +113,34 @@ if(height > width){
       git.css("width", "40%");
       progress.css("transition", "2s"); 
     }
-    if($(document).scrollTop() > 1950){
+    if(doc.scrollTop() > 1950){
       main.css("background-color", "#f3f3f3");
       main.css("transition", ".2s");
       main.css("color", "#333");
       //$(".progress").css("background-color", "#f3f3f3");
      
     }
-    if($(document).scrollTop() > 1970){
+    if(doc.scrollTop() > 1970){
       projects.css("opacity", 1);
       projects.css("left", 0);
       projects.css("transition", ".5s");
     }
-    if($(document).scrollTop() > 2300){
+    if(doc.scrollTop() > 2300){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
     }
     //corrigir
-    if($(document).scrollTop() > 3790){
+    if(doc.scrollTop() > 3790){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if ($(document).scrollTop() > 4030) {
+    if (doc.scrollTop() > 4030) {
       //contact.css("opacity", 1);
      // contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if ($(document).scrollTop() > 4040) {
+    if (doc.scrollTop() > 4040) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
@@ -160,7 +163,7 @@ if(height > width){
     if($(window).width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
     $(window).scroll(function(){
-    if($(document).scrollTop() > 20){
+    if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
@@ -169,7 +172,7 @@ if(height > width){
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
     }
-    if($(document).scrollTop() > 500){
+    if(doc.scrollTop() > 500){
       main.css("background-color", "#333");
       main.css("transition", ".2s");
       main.css("color", "#f3f3f3");
@@ -186,7 +189,7 @@ if(height > width){
       //$(".progress").css("background-color", "#f3f3f3");
       progress.css("transition", ".5s");
     }
-    if($(document).scrollTop() > 850){
+    if(doc.scrollTop() > 850){
       skil.css("opacity", 1);
       progress.css("opacity", 1);
       skil.css("transition", ".2s");
@@ -203,34 +206,34 @@ if(height > width){
       git.css("width", "40%");
       progress.css("transition", "2s"); 
     }
-    if($(document).scrollTop() > 1600){
+    if(doc.scrollTop() > 1600){
       main.css("background-color", "#f3f3f3");
       main.css("transition", ".2s");
       main.css("color", "#333");
       //$(".progress").css("background-color", "#f3f3f3");
      
     }
-    if($(document).scrollTop() > 1660){
+    if(doc.scrollTop() > 1660){
       progress.css("transition", "2s");
       projects.css("opacity", 1);
       projects.css("left", 0);
-      projects.css("transition", "2s");
+      projects.css("transition", ".5s");
     }
-    if($(document).scrollTop() > 2050){
+    if(doc.scrollTop() > 2050){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
     }
-    if($(document).scrollTop() > 3400){
+    if(doc.scrollTop() > 3400){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if ($(document).scrollTop() > 3410) {
+    if (doc.scrollTop() > 3410) {
       contact.css("opacity", 1);
       contact.css("transition", ".3s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", ".8s");
     }
-    if ($(document).scrollTop() > 3425) {
+    if (doc.scrollTop() > 3425) {
       first_name.css("left", 0); 
       first_name.css("transition", "2s");
       last_name.css("right", 0);
@@ -251,7 +254,7 @@ if(height > width){
   if($(window).width() > 720){
      //regra para mudança de cor em telas maiores que a de um celular
      $(window).scroll(function(){
-    if($(document).scrollTop() > 20){
+    if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
@@ -260,7 +263,7 @@ if(height > width){
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
     }   
-    if($(document).scrollTop() > 400){
+    if(doc.scrollTop() > 400){
       main.css("background-color", "#333");
       main.css("transition", ".2s");
       main.css("color", "#f3f3f3");
@@ -276,7 +279,7 @@ if(height > width){
       //$(".progress").css("background-color", "#f3f3f3");
       //$(".progress").css("transition", ".5s");
     }
-    if($(document).scrollTop() > 660){
+    if(doc.scrollTop() > 660){
       skil.css("opacity", 1);
       progress.css("opacity", 1);
       skil.css("transition", ".2s");
@@ -293,7 +296,7 @@ if(height > width){
       git.css("width", "40%");
       progress.css("transition", "2s"); 
     }
-    if($(document).scrollTop() > 1330){
+    if(doc.scrollTop() > 1330){
       main.css("background-color", "#f3f3f3");
       main.css("transition", ".2s");
       main.css("color", "#333");
@@ -301,20 +304,20 @@ if(height > width){
       //$(".progress").css("transition", ".5s");
       
     }
-    if($(document).scrollTop() > 1480){
+    if(doc.scrollTop() > 1480){
       projects.css("opacity", 1);
       projects.css("left", 0);
-      projects.css("transition", "2s");
+      projects.css("transition", ".5s");
     }
-    if($(document).scrollTop() > 1900){
+    if(doc.scrollTop() > 1900){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
     }
-    if($(document).scrollTop() > 3020){
+    if(doc.scrollTop() > 3020){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if ($(document).scrollTop() > 3170) {
+    if (doc.scrollTop() > 3170) {
       contact.css("opacity", 1);
       contact.css("transition", "1s");
     }
@@ -322,7 +325,7 @@ if(height > width){
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if ($(document).scrollTop() > 3230) {
+    if (doc.scrollTop() > 3230) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
