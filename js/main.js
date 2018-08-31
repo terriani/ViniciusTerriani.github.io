@@ -132,8 +132,8 @@ if(height > width){
       main.css("color", "#f2f2f2");
     }
     if ($(document).scrollTop() > 4030) {
-      contact.css("opacity", 1);
-      contact.css("transition", "1s");
+      //contact.css("opacity", 1);
+     // contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
