@@ -128,13 +128,13 @@ if(height > width){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if ($(document).scrollTop() > 4010) {
+    if ($(document).scrollTop() > 4020) {
       contact.css("opacity", 1);
       contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if ($(document).scrollTop() > 4020) {
+    if ($(document).scrollTop() > 4030) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
