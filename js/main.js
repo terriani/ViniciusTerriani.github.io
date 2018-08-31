@@ -254,6 +254,10 @@ if(height > width){
     if(doc.scrollTop() > 3400){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
+      contact_title.css("color", "#e91e63");
+    }
+    else{
+      contact_title.css("color", "#666");
     }
     if (doc.scrollTop() > 3410) {
       contact.css("opacity", 1);
@@ -344,6 +348,10 @@ if(height > width){
     if(doc.scrollTop() > 3020){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
+      contact_title.css("color", "#e91e63");
+    }
+    else{
+      contact_title.css("color", "#666");
     }
     if (doc.scrollTop() > 3170) {
       contact.css("opacity", 1);
