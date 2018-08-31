@@ -134,13 +134,13 @@ if(height > width){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if (doc.scrollTop() > 3810) {
+    if (doc.scrollTop() > 3800) {
       //contact.css("opacity", 1);
      // contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if (doc.scrollTop() > 3830) {
+    if (doc.scrollTop() > 3805) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
