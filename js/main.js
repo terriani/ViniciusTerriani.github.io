@@ -155,11 +155,6 @@ if(height > width){
       contact_title.css("color", "#e91e63");
     }
 
-    else{
-      main.css("background-color", "#f3f3f3");
-      main.css("color", "#333");
-    }
-
     //se o scroll for maior que 4020 a animaçao da area de contato é executada 
     if (doc.scrollTop() > 4000) {
       contact.css("opacity", 1);
@@ -169,7 +164,7 @@ if(height > width){
     }
 
     //caso o scroll seja maior que 4050 a animação que monta o formulario se inicia 
-    if ($(document).scrollTop() > 4050) {
+    if ($(document).scrollTop() > 4100) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
