@@ -155,7 +155,7 @@ if(height > width){
       contact_title.css("color", "#e91e63");
     }
 
-    else if(doc.scrollTop() < 3800){
+    if(doc.scrollTop() < 3800){
       main.css("background-color", "#f3f3f3");
       main.css("color", "#333");
     }
