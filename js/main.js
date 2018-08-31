@@ -124,7 +124,8 @@ if(height > width){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
     }
-    if($(document).scrollTop() > 3950){
+    //corrigir
+    if($(document).scrollTop() > 3890){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
