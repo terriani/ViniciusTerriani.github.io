@@ -160,7 +160,7 @@ if(height > width){
     }
 
     //se o scroll for maior que 4020 a animaçao da area de contato é executada 
-    if (doc.scrollTop() > 4000) {
+    if (doc.scrollTop() > 4050) {
       contact.css("opacity", 1);
       contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
