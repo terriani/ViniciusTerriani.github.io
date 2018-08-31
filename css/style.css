@@ -238,19 +238,3 @@ hr{
     }
   }
  
-  /*teste com codigo fornecido pela materialize css*/
-     /* label color */
-     .input-field label {
-      font-size: 13pt;
-    }
-    /* label underline focus color */
-    .input-field input[type=text]:focus {
-     font-size: 13pt;
-    }
-    
-    /* icon prefix focus color */
-    .input-field .prefix.active {
-      color: #000;
-    }
-       
-  

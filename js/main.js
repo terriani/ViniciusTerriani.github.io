@@ -28,12 +28,15 @@ var last_name = $(".last-name");
 var email = $(".email");
 var msg = $(".msg");
 var contact_title = $(".title-contact");
+var btn_collapse = $(".button-collapse");
+var scrollspy = $(".scrollspy");
+var doc = $("document");
 
 
 //executa ao carregar a pagina
-$("document").ready(function(){
-    $(".button-collapse").sideNav();
-    $(".scrollspy").scrollSpy();
+doc.ready(function(){
+    btn_collapse.sideNav();
+    scrollspy.scrollSpy();
     intro_img.css("opacity", 1);
     intro_img.css("left", "0");
     intro_img.css("transition", "2s");
@@ -114,11 +117,10 @@ if(height > width){
       //$(".progress").css("background-color", "#f3f3f3");
      
     }
-    if($(document).scrollTop() > 2000){
-      progress.css("transition", "2s");
+    if($(document).scrollTop() > 1970){
       projects.css("opacity", 1);
       projects.css("left", 0);
-      projects.css("transition", "2s");
+      projects.css("transition", ".5s");
     }
     if($(document).scrollTop() > 2300){
       project_area.css("opacity", 1);
