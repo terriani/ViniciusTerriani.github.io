@@ -127,12 +127,6 @@ if(height > width){
     if($(document).scrollTop() > 3993){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
-      main.css("transition", ".2s");
-    }
-    else if($(document).scrollTop() < 3990 ) {
-      main.css("background-color", "#f3f3f3");
-      main.css("transition", ".2s");
-      main.css("color", "#333");
     }
     if ($(document).scrollTop() > 4030) {
       contact.css("opacity", 1);
@@ -226,7 +220,6 @@ if(height > width){
     if($(document).scrollTop() > 3400){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
-      main.css("transition", ".2s");
     }
     if ($(document).scrollTop() > 3410) {
       contact.css("opacity", 1);
