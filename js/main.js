@@ -221,7 +221,7 @@ if(height > width){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if ($(document).scrollTop() > 3450) {
+    if ($(document).scrollTop() > 3410) {
       contact.css("opacity", 1);
       contact.css("transition", ".3s");
       contact_title.css("transform", "scale(1)");
