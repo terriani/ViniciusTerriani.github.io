@@ -200,7 +200,8 @@ hr{
     }
 
     .contact{
-      margin: 30px;
+      margin: 100px 0;
+      margin-bottom: 0;
       font-weight: bolder;
     }
   }

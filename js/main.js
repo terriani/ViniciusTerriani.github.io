@@ -32,6 +32,7 @@ var btn_collapse = $(".button-collapse");
 var scrollspy = $(".scrollspy");
 var doc = $(document);
 var title = $(".title");
+var win = $(window);
 
 
 //executa ao carregar a pagina
@@ -62,15 +63,15 @@ doc.ready(function(){
   contact.css("opacity", 0);
 
   //pega a altura e a largura da tela
-  var width = $(window).width();
-  var height = $(window).height();
+  var width = win.width();
+  var height = win.height();
 
 
 
 if(height > width){
-  if($(window).width() < 780){
+  if(win.width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
-    $(window).scroll(function(){
+    win.scroll(function(){
     if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
@@ -130,17 +131,17 @@ if(height > width){
       project_area.css("transition", "1s");
     }
     //corrigir
-    if(doc.scrollTop() > 3790){
+    if(doc.scrollTop() > 4300){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if (doc.scrollTop() > 3800) {
-      //contact.css("opacity", 1);
-     // contact.css("transition", "1s");
+    if (doc.scrollTop() > 4400) {
+      contact.css("opacity", 1);
+      contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if (doc.scrollTop() > 3805) {
+    if ($(document).scrollTop() > 4450) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
@@ -160,9 +161,9 @@ if(height > width){
   if(width > height){
 
     //formatar regras para landscape
-    if($(window).width() < 780){
+    if(win.width() < 780){
     //regra para mudança de cor em telas menores que a de um celular
-    $(window).scroll(function(){
+    win.scroll(function(){
     if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
@@ -251,9 +252,9 @@ if(height > width){
   
 
 
-  if($(window).width() > 720){
+  if(win.width() > 720){
      //regra para mudança de cor em telas maiores que a de um celular
-     $(window).scroll(function(){
+     win.scroll(function(){
     if(doc.scrollTop() > 20){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
