@@ -129,7 +129,7 @@ if(height > width){
       main.css("color", "#f2f2f2");
       main.css("transition", ".2s");
     }
-    else if($(document).scrollTop() < 3970 ) {
+    else if($(document).scrollTop() < 3930 ) {
       main.css("background-color", "#f3f3f3");
       main.css("transition", ".2s");
       main.css("color", "#333");
