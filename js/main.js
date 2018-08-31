@@ -131,17 +131,17 @@ if(height > width){
       project_area.css("transition", "1s");
     }
     //corrigir
-    if(doc.scrollTop() > 4300){
+    if(doc.scrollTop() > 4000){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
     }
-    if (doc.scrollTop() > 4400) {
+    if (doc.scrollTop() > 4100) {
       contact.css("opacity", 1);
       contact.css("transition", "1s");
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", "1s");
     }
-    if ($(document).scrollTop() > 4450) {
+    if ($(document).scrollTop() > 4150) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
