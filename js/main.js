@@ -21,6 +21,13 @@ var git = $(".progress-git");
 var progress = $(".progress");
 var projects = $(".projects");
 var project_area = $(".project-area");
+var contact = $(".contact");
+var body = $("body");
+var first_name = $(".name");
+var last_name = $(".last-name");
+var email = $(".email");
+var msg = $(".msg");
+var contact_title = $(".title-contact");
 
 
 //executa ao carregar a pagina
@@ -33,6 +40,7 @@ $("document").ready(function(){
     text_intro.css("opacity", 1);
     text_intro.css("right", "0");
     text_intro.css("transition", "2s");
+    body.css("overflow-x", "hidden");
   });
  
 
@@ -45,6 +53,7 @@ $("document").ready(function(){
   intro_img.css("opacity", 0);
   text_intro.css("opacity", 0);
   btn_up.css("opacity", 0);
+  contact.css("opacity", 0);
 
   //pega a altura e a largura da tela
   var width = $(window).width();
@@ -96,7 +105,7 @@ if(height > width){
       bootstrap.css("width", "40%");
       materialize.css("width", "30%");
       git.css("width", "40%");
-      progress.css("transition", "5s"); 
+      progress.css("transition", "2s"); 
     }
     if($(document).scrollTop() > 1950){
       main.css("background-color", "#f3f3f3");
@@ -114,6 +123,26 @@ if(height > width){
     if($(document).scrollTop() > 2300){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
+    }
+    if($(document).scrollTop() > 4450){
+      main.css("background-color", "#222");
+      main.css("color", "#f2f2f2");
+    }
+    if ($(document).scrollTop() > 4470) {
+      contact.css("opacity", 1);
+      contact.css("transition", "1s");
+      contact_title.css("transform", "scale(1)");
+      contact_title.css("transition", "1s");
+    }
+    if ($(document).scrollTop() > 4510) {
+     first_name.css("left", 0); 
+     first_name.css("transition", "2s");
+     last_name.css("right", 0);
+     last_name.css("transition", "3.5s");
+     email.css("left", 0);
+     email.css("transition", "3s");
+     msg.css("bottom", 0);
+     msg.css("transition", "2.5s");
     }
   });
   }
@@ -169,7 +198,7 @@ if(height > width){
       bootstrap.css("width", "40%");
       materialize.css("width", "30%");
       git.css("width", "40%");
-      progress.css("transition", "5s"); 
+      progress.css("transition", "2s"); 
     }
     if($(document).scrollTop() > 1600){
       main.css("background-color", "#f3f3f3");
@@ -187,6 +216,26 @@ if(height > width){
     if($(document).scrollTop() > 2050){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
+    }
+    if($(document).scrollTop() > 3600){
+      main.css("background-color", "#222");
+      main.css("color", "#f2f2f2");
+    }
+    if ($(document).scrollTop() > 3650) {
+      contact.css("opacity", 1);
+      contact.css("transition", "1s");
+      contact_title.css("transform", "scale(1)");
+      contact_title.css("transition", "1s");
+    }
+    if ($(document).scrollTop() > 3690) {
+      first_name.css("left", 0); 
+      first_name.css("transition", "2s");
+      last_name.css("right", 0);
+      last_name.css("transition", "3.5s");
+      email.css("left", 0);
+      email.css("transition", "3s");
+      msg.css("bottom", 0);
+      msg.css("transition", "2.5s");
     }
   });
   }
@@ -239,7 +288,7 @@ if(height > width){
       bootstrap.css("width", "40%");
       materialize.css("width", "30%");
       git.css("width", "40%");
-      progress.css("transition", "5s"); 
+      progress.css("transition", "2s"); 
     }
     if($(document).scrollTop() > 1330){
       main.css("background-color", "#f3f3f3");
@@ -257,6 +306,28 @@ if(height > width){
     if($(document).scrollTop() > 1900){
       project_area.css("opacity", 1);
       project_area.css("transition", "1s");
+    }
+    if($(document).scrollTop() > 3020){
+      main.css("background-color", "#222");
+      main.css("color", "#f2f2f2");
+    }
+    if ($(document).scrollTop() > 3170) {
+      contact.css("opacity", 1);
+      contact.css("transition", "1s");
+    }
+    if($(document).scrollTop() > 3200){
+      contact_title.css("transform", "scale(1)");
+      contact_title.css("transition", "1s");
+    }
+    if ($(document).scrollTop() > 3230) {
+     first_name.css("left", 0); 
+     first_name.css("transition", "2s");
+     last_name.css("right", 0);
+     last_name.css("transition", "3.5s");
+     email.css("left", 0);
+     email.css("transition", "3s");
+     msg.css("bottom", 0);
+     msg.css("transition", "2.5s");
     }
   });
   }
