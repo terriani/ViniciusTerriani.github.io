@@ -154,6 +154,10 @@ if(height > width){
       main.css("color", "#f2f2f2");
       contact_title.css("color", "#e91e63");
     }
+    //caso o scroll seja menor que 4000 a cor fa font volta para #333
+    else{
+      contact_title.css("color", "#666");
+    }
 
     //se o scroll for maior que 4020 a animaçao da area de contato é executada 
     if (doc.scrollTop() > 4000) {
