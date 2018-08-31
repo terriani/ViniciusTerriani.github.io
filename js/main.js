@@ -152,6 +152,7 @@ if(height > width){
     if(doc.scrollTop() > 4000){
       main.css("background-color", "#222");
       main.css("color", "#f2f2f2");
+      contact_title.css("color", "#e91e63");
     }
 
     //se o scroll for maior que 4020 a animaçao da area de contato é executada 
