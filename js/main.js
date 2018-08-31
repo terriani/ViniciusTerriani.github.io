@@ -227,7 +227,7 @@ if(height > width){
       contact_title.css("transform", "scale(1)");
       contact_title.css("transition", ".8s");
     }
-    if ($(document).scrollTop() > 3440) {
+    if ($(document).scrollTop() > 3425) {
       first_name.css("left", 0); 
       first_name.css("transition", "2s");
       last_name.css("right", 0);
