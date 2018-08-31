@@ -81,7 +81,7 @@ if(height > width){
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
     }
-    if(doc.scrollTop() > 780){
+    if(doc.scrollTop() > 750){
       main.css("background-color", "#333");
       main.css("transition", ".2s");
       main.css("color", "#f3f3f3");
