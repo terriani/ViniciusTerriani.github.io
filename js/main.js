@@ -163,7 +163,7 @@ if(height > width){
     }
 
     //caso o scroll seja maior que 4050 a animação que monta o formulario se inicia 
-    if ($(document).scrollTop() > 4050) {
+    if ($(document).scrollTop() > 4090) {
      first_name.css("left", 0); 
      first_name.css("transition", "2s");
      last_name.css("right", 0);
