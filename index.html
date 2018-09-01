@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pattaya" rel="stylesheet">
     <!-- Used as an example only to position the footer at the end of the page.
     You can delete these styles or move it to your custom css file -->
-    <style>
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/materialize-social.css">
   </head>
   <body>
     <header>
@@ -71,7 +71,7 @@
   <div class="row">
     <div class="col m8 s12 push-m2">
       <div class="skils section scrollspy" id="skils">
-          <p class="text-skils"> <span class="title-skils"><span class="material-icons small pink-text icons">code</span> Aqui vai um resumo dos meus conhecimentos</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea illo amet labore, consequuntur sunt necessitatibus saepe corrupti enim officia alias doloribus nesciunt reiciendis nam incidunt inventore commodi fugit? Asperiores? </p>
+          <p class="text-skils"> <span class="title-skils"><span class="material-icons small pink-text icons">code</span> Aqui vai um resumo dos meus conhecimentos</span> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ea illo amet labore, consequuntur sunt necessitatibus saepe corrupti enim officia alias doloribus nesciunt reiciendis nam incidunt inventore commodi fugit? Asperiores? </p>
       </div>
       <i class="skil">PHP</i>
       <div class="progress progress-php">
@@ -159,7 +159,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div>     
     </main>
     <footer class="page-footer grey darken-4 section scrollspy" id="footer">
       <div class="footer-copyright">
@@ -168,11 +168,33 @@
         </div>
       </div>
     </footer>
-    <a href="#top" class="btn-floating btn-large waves-effect waves-light black  btn-up"><i class="material-icons">expand_less</i></a>
+    <div class="fixed-action-btn btn-action">
+        <a class="btn-floating btn-large white z-depth-5">
+          <i class="large material-icons black-text">touch_app</i>
+        </a>
+        <ul>
+          <li><a class="waves-effect waves-light btn-floating social github" href="https://github.com/terriani" target="blank">
+              <i class="fa fa-github"></i> Sign in with github</a>
+          </li>
+          <li><a class="waves-effect waves-light btn-floating social twitter" href="https://twitter.com/VTerriani?lang=pt-br" target="blank">
+              <i class="fa fa-twitter"></i> Sign in with twitter</a>
+          </li>
+          <li><a class="waves-effect waves-light btn-floating social facebook" href="https://www.facebook.com/viny.terriani" target="blank">
+              <i class="fa fa-facebook"></i> Sign in with facebook</a>
+          </li>
+          <li><a class="waves-effect waves-light btn-floating social instagram" href="https://www.instagram.com/vinicius_terriani/?hl=pt-br" target="blank">
+              <i class="fa fa-instagram"></i> Sign in with instagram</a>
+          </li>
+        </ul>
+      </div>
+    <a href="#top" class="btn-floating btn-large waves-effect waves-light black  btn-up z-depth-5"><i class="material-icons">expand_less</i></a>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Materialize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- CDN GreenSock.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/gasp.js"></script>
   </body>
 </html>

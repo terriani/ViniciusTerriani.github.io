@@ -33,22 +33,23 @@ var scrollspy = $(".scrollspy");
 var doc = $(document);
 var title = $(".title");
 var win = $(window);
+var btn_act = $(".btn-action");
 
 
 //executa ao carregar a pagina
 doc.ready(function(){
     btn_collapse.sideNav();
     scrollspy.scrollSpy();
-    intro_img.css("opacity", 1);
-    intro_img.css("left", "0");
-    intro_img.css("transition", "2s");
-    text_intro.css("opacity", 1);
-    text_intro.css("right", "0");
-    text_intro.css("transition", "2s");
+    //intro_img.css("opacity", 1);
+    //intro_img.css("left", "0");
+    //intro_img.css("transition", "2s");
+    //text_intro.css("opacity", 1);
+    //text_intro.css("right", "0");
+    //text_intro.css("transition", "2s");
     body.css("overflow-x", "hidden");
-    title.css("left", 0);
-    title.css("transition", "3s");
-    title.css("color", "#444");
+    //title.css("left", 0);
+    //title.css("transition", "3s");
+    //title.css("color", "#444");
   });
  
 
@@ -79,12 +80,16 @@ if(height > width){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "100px");
+      btn_act.css("transition", "1s");
     }
     //ao subir a pagina ate o topo executa a animação de desaparecimento do botão de volta ao topo
     else{
       btn_up.css("opacity", 0);
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "30px");
+      btn_act.css("transition", "1s");
     }
 
     //caso o scroll seja maior que 750px o background da pagina muda para #333333,
@@ -196,10 +201,14 @@ if(height > width){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "100px");
+      btn_act.css("transition", "1s");
     }else{
       btn_up.css("opacity", 0);
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "30px");
+      btn_act.css("transition", "1s");
     }
     if(doc.scrollTop() > 500){
       main.css("background-color", "#333");
@@ -291,10 +300,14 @@ if(height > width){
       btn_up.css("bottom", "30px");
       btn_up.css("opacity", 1);
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "100px");
+      btn_act.css("transition", "1s");
     }else{
       btn_up.css("opacity", 0);
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
+      btn_act.css("bottom", "30px");
+      btn_act.css("transition", "1s");
     }   
     if(doc.scrollTop() > 400){
       main.css("background-color", "#333");

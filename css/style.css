@@ -48,6 +48,7 @@ main {
   font-family: 'Pattaya', sans-serif;
   position: relative;
   left: 150%;
+  color: #444;
 }
 
 .btn-up{
@@ -70,8 +71,9 @@ main {
 .title-skils{
   text-align: center;
   font-weight: bolder;
-  font-size: 22pt
+  font-size: 22pt;
 }
+
 
 .skil{
   font-size: 15pt;
@@ -158,6 +160,10 @@ hr{
   transform: scale(0);
 }
 
+.btn-action{
+  bottom: 30px;
+  right: 15px;
+}
 @media only screen and (max-width: 780px) {
     .intro-img{
       margin-top: 50px;
