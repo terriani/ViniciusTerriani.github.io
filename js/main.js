@@ -63,6 +63,7 @@ doc.ready(function(){
   text_intro.css("opacity", 0);
   btn_up.css("opacity", 0);
   contact.css("opacity", 0);
+  btn_act.css("opacity", 0.6);
 
   //pega a altura e a largura da tela
   var width = win.width();
@@ -82,6 +83,7 @@ if(height > width){
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "100px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 1);
     }
     //ao subir a pagina ate o topo executa a animação de desaparecimento do botão de volta ao topo
     else{
@@ -90,6 +92,7 @@ if(height > width){
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "30px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 0.6);
     }
 
     //caso o scroll seja maior que 750px o background da pagina muda para #333333,
@@ -203,12 +206,14 @@ if(height > width){
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "100px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 1);
     }else{
       btn_up.css("opacity", 0);
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "30px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 0.6);
     }
     if(doc.scrollTop() > 500){
       main.css("background-color", "#333");
@@ -302,12 +307,14 @@ if(height > width){
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "100px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 1);
     }else{
       btn_up.css("opacity", 0);
       btn_up.css("bottom", "-200px");
       btn_up.css("transition", "1s");
       btn_act.css("bottom", "30px");
       btn_act.css("transition", "1s");
+      btn_act.css("opacity", 0.6);
     }   
     if(doc.scrollTop() > 400){
       main.css("background-color", "#333");
