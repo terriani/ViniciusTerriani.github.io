@@ -138,21 +138,21 @@
         <h3 class="title-contact center-align">Vamos bater um papo ?</h3>
         <form name="contact" id="contact" netlify>
           <div class="input-field col s12 l6 ">
-            <input type="text" id="first_name" class="validate name" name="name" autocomplete="0">
+            <input type="text" id="first_name" class="validate name" name="name" autocomplete="false" required>
             <label for="first_name">Nome</label>
           </div>
           <div class="input-field col s12 l6">
-            <input type="text" id="last_name" class="validate last-name" name="last_name" autocomplete="0">
+            <input type="text" id="last_name" class="validate last-name" name="last_name" autocomplete="false" required>
             <label for="last_name">Sobrenome</label>
           </div>
           <div class="input-field col s12 email">
-            <input type="email" id="email" class="validate email" name="email" autocomplete="0">
+            <input type="email" id="email" class="validate email" name="email" autocomplete="false" required>
             <label for="email" data-error="wrong" data-success="right">Email</label>
           </div>
           <div class="input-field col s12 msg">
-            <textarea id="textarea1" class="materialize-textarea msg" name="message" autocomplete="0"></textarea>
+            <textarea id="textarea1" class="materialize-textarea msg" name="message" autocomplete="0" required></textarea>
             <label for="textarea1">Menssagem</label>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            <button class="btn waves-effect waves-light pink" type="submit" name="action">Enviar
               <i class="material-icons right">send</i>
             </button>
           </div>

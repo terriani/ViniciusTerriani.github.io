@@ -48,6 +48,7 @@ doc.ready(function(){
     body.css("overflow-x", "hidden");
     title.css("left", 0);
     title.css("transition", "3s");
+    title.css("color", "#444");
   });
  
 
