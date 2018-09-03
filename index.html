@@ -15,22 +15,23 @@
     <!-- Used as an example only to position the footer at the end of the page.
     You can delete these styles or move it to your custom css file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/materialize-social.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize-social.css">
   </head>
   <body>
     <header>
-      <div class="">
-      <nav class="grey darken-4" id="top">
-        <div class="nav-wrapper">
+      <div class="menu">
+      <nav class="" id="top">
+        <div class="nav-wrapper grey darken-4">
           <div class="container ri">
-            <a href="#" class="brand-logo"> Muito Prazer</a>
+            <a href="#" class="logo amber-text text-darken-1 right-align"> &lt; Vinicius Terriani /&gt;</a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#top" class="scrollspy">Sobre mim</a></li>
-              <li><a href="#skils" class="scrollspy">Competências</a></li>
-              <li><a href="#skil" class="scrollspy">Tecnologias</a></li>
-              <li><a href="#projects" class="scrollspy">Projetos</a></li>
-              <li><a href="#contact" class="scrollspy">Contatos</a></li>
+              <li><a href="#about-me" class="scrollspy amber-text text-darken-1">Sobre mim</a></li>
+              <li><a href="#skils" class="scrollspy amber-text text-darken-1">Competências</a></li>
+              <li><a href="#skil" class="scrollspy amber-text text-darken-1">Tecnologias</a></li>
+              <li><a href="#projects" class="scrollspy amber-text text-darken-1">Projetos</a></li>
+              <li><a href="#contact" class="scrollspy amber-text text-darken-1">Contatos</a></li>
             </ul>
             <ul class="side-nav" id="mobile-menu">
               <li>
@@ -43,7 +44,7 @@
                   <a href="#!email"><span class="white-text email">viniterriani.vt@gmail.com</span></a>
                 </div>
               </li>
-              <li><a href="#top" class="scrollspy">Sobre min</a></li>
+              <li><a href="#about-me" class="scrollspy">Sobre min</a></li>
               <li><a href="#skils" class="scrollspy">Competências</a></li>
               <li><a href="#skil" class="scrollspy">Tecnologias</a></li>
               <li><a href="#projects" class="scrollspy">Projetos</a></li>
@@ -56,9 +57,22 @@
     </header>
     <main class="main">
       <!-- Your content here -->
-      <div id="top" class="about-me section scrollspy" >
-      <div class="row">
-        <div class="col s12 m6 center-align">
+      <div class="wellcome center-align">
+        <div class="wellcome-text">
+        <div class=".wellcome-animation">
+          <span class="t1">Olá</span>
+          <span class="t2">sejam bem vindos ao meu site</span>
+          <span class="t3">é um imenso prazer te-los aqui</span>
+          <span class="t4">abaixo tentarei mostrar um pouco quem eu sou</span>
+          <span class="t5">espero que gostem</span>
+        </div>
+      </div>
+      <div class="center-align btn-down section scrollspy"><a href="#about-me" class="link-down"><i class="material-icons down">arrow_downward</i></a></div>
+
+      </div>
+      <div id="top" class="section scrollspy">
+      <div class="row about-me section scrollspy">
+        <div class="col s12 m6 center-align " id="about-me">
           <img src="img/me-circle.jpg" alt="" class="responsive-img intro-img z-depth-5"/>
         </div>
         <div class="col s12 m6 left-align pull-m1">
@@ -135,8 +149,8 @@
   <div class="contact">
     <div class="row">
       <div class="col s12">
-        <h3 class="title-contact center-align">Vamos bater um papo ?</h3>
-        <form name="contact" id="contact" netlify>
+        <h3 class="title-contact center-align amber-text text-darken-1">Vamos bater um papo ?</h3>
+        <form name="contact" class=" section scrollspy" id="contact" netlify>
           <div class="input-field col s12 l6 ">
             <input type="text" id="first_name" class="validate name" name="name" autocomplete="false" required>
             <label for="first_name">Nome</label>
@@ -152,7 +166,7 @@
           <div class="input-field col s12 msg">
             <textarea id="textarea1" class="materialize-textarea msg" name="message" autocomplete="0" required></textarea>
             <label for="textarea1">Menssagem</label>
-            <button class="btn waves-effect waves-light pink" type="submit" name="action">Enviar
+            <button class="btn waves-effect waves-light amber darken-4" type="submit" name="action">Enviar
               <i class="material-icons right">send</i>
             </button>
           </div>
@@ -164,7 +178,27 @@
     <footer class="page-footer grey darken-4 section scrollspy" id="footer">
       <div class="footer-copyright">
         <div class="container">
-          © 2018 Copyright <strong>   -  Vinicius Terriani</strong>
+          <div class="row">
+            <div class="col s12 m3 center-align">
+                <a class="waves-effect waves-light btn social github social-btn" href="https://github.com/terriani" target="blank">
+                <i class="fa fa-github"></i>github</a>
+            </div>
+            <div class="col s12 m3 center-align">
+                <a class="waves-effect waves-light btn social facebook social-btn" href="https://www.facebook.com/viny.terriani" target="blank">
+                <i class="fa fa-facebook"></i>facebook</a>
+            </div>
+            <div class="col s12 m3 center-align">
+              <a class="waves-effect waves-light btn social instagram social-btn" href="https://www.instagram.com/vinicius_terriani/?hl=pt-br" target="blank">
+              <i class="fa fa-instagram"></i>instagram</a>
+              </div>
+            <div class="col s12 m3 center-align">
+                <a class="waves-effect waves-light btn social twitter social-btn" href="https://twitter.com/VTerriani?lang=pt-br" target="blank">
+                <i class="fa fa-twitter"></i>twitter</a>
+            </div>
+          </div>
+          <div id="end">
+            © 2018 Copyright <strong>   -  Vinicius Terriani</strong>
+          </div>
         </div>
       </div>
     </footer>
@@ -192,9 +226,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Materialize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
     <!-- CDN GreenSock.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <!--CDN ScrollMagic-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- js local para algumas animações com jQuery-->
     <script src="js/gasp.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

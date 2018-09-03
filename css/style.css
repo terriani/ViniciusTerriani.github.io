@@ -5,17 +5,64 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background: #f3f3f3;
-  overflow-x: hidden;
+  overflow-x: auto;
   }
 main {
   flex: 1 0 auto;
   overflow-x: hidden;
 }
 
-.brand-logo{
-  font-family: 'Pattaya', sans-serif;
+nav{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
+header{
+  color: #444 !important;
+}
+
+
+.logo{
+  font-family: 'Pattaya', sans-serif;
+  font-size: 25pt;
+  
+}
+
+.wellcome{
+  min-height: 100vh;
+  background-color: #222;
+  overflow-y: hidden !important;
+}
+
+.wellcome-text{
+  position: relative;
+  top: 30vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 18pt;
+  color: #ccc;
+  font-family: 'Merienda', cursive;
+  text-align: justify !important;
+}
+
+.btn-down{
+  position: relative;
+  color: #f1f1f1;
+  top: 20rem;
+}
+
+.down{
+  font-size: 100pt;
+}
+
+.link-down{
+  color: #f1f1f1;
+}
+
+.about-me{
+  min-height: 100vh;
+}
 
 .intro-img{
   position: relative;
@@ -86,7 +133,7 @@ main {
 }
 
 .projects{
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 40px 20px 50px 40px;
   border-left: 3px solid #888;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -164,8 +211,37 @@ hr{
   bottom: 30px;
   right: 15px;
 }
+
+.social-btn{
+  margin: 5px;
+}
+
 @media only screen and (max-width: 780px) {
-    .intro-img{
+  
+  .logo{
+    font-size: 20pt;
+  }
+
+  .wellcome-text{
+    position: relative;
+    top: 18vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18pt;
+    color: #ccc;
+    font-family: 'Merienda', cursive;
+    }
+
+  .btn-down{
+    position: relative;
+    top: 25vh;
+  }
+
+  .down{
+    font-size: 100pt;
+  }
+  
+  .intro-img{
       margin-top: 50px;
     }
 
@@ -216,9 +292,19 @@ hr{
       padding-bottom: 0;
       font-weight: bolder;
     }
+
+    .social-btn{
+      text-align: center;
+      width: 80%;
+    }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
+   
+    .btn-down{
+      top: 0vh;
+    }
+   
     .text-intro{
       margin-left: 50px;
     }
