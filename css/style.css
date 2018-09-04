@@ -47,6 +47,11 @@ header{
   text-align: justify !important;
 }
 
+.t1, .t2, .t3, .t4, .t5{
+  opacity: 0;
+}
+
+
 .btn-down{
   position: relative;
   color: #f1f1f1;
