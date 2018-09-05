@@ -48,13 +48,13 @@ doc.ready(function(){
     //animação da tela de boas vindas usando type.js 
     var typed = new Typed('.msg-wellcome', {
       strings: [
-                  "sudo ^1000 rm -rf ^500 / ",
+                  "sudo ^200 apt-^150get upg^120rade ^300 -y",
                   "Olá,",
                   "sejam ^300 muito bem vindos.",
-                  "É um prezer ^500 tê-los aqui.",
-                  "^1000 Espero que gostem^5000."
+                  "É um prazer ^500 tê-los aqui.",
+                  "^1000 Espero que gostem^4000!!!"
                 ],
-      typeSpeed: 100,
+      typeSpeed: 70,
       backSpeed: 50,
       loop: true 
 
