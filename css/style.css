@@ -87,7 +87,7 @@ header{
   margin-right: 20%;
   font-size: 13pt;
   color: #ccc;
-  font-family: 'Merienda', cursive;
+  font-family: 'Ubuntu', sans-serif;
   text-align: left;
 }
 
@@ -274,16 +274,17 @@ hr{
 
   .wellcome-text{
     position: relative;
-    top: 18vh;
+    top: 10vh;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 13pt;
     color: #ccc;
-    font-family: 'Merienda', cursive;
+    font-family: 'Ubuntu', sans-serif;
     }
 
     .terminal{
       height: 30rem;
+      top: 10px;
     }
 
   .btn-down{
@@ -357,6 +358,7 @@ hr{
    
    .terminal{
      margin-bottom: 50px;
+     height: 15rem;
      
    }
 
