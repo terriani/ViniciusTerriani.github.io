@@ -10,6 +10,7 @@ body {
 main {
   flex: 1 0 auto;
   overflow-x: hidden;
+  background-color: #222;
 }
 
 nav{
@@ -32,23 +33,65 @@ header{
 
 .wellcome{
   min-height: 100vh;
-  background-color: #222;
-  overflow-y: hidden !important;
+  min-width: 100vw;
+  overflow-y: auto !important;
+  background-image: url("../img/ubuntu-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  box-shadow: 3px 3px 25px #333;
+}
+
+.terminal{
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-right: 10px;
+  width: 100%;
+  height: 25rem;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  border-radius: 8px;
+  border-top: 40px solid black;
+  cursor: text;
+  box-shadow: 3px 3px 20px #111;
+}
+
+.terminal-path{
+  color:greenyellow;
+}
+
+
+.circle-1, .circle-2, .circle-3{
+  height: 13px;
+  width: 13px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  top: -30px;
+  position: relative;
+  cursor: pointer;
+} 
+
+.circle-2{
+  background-color: yellow;
+}
+
+.circle-3{
+  background-color: green;
 }
 
 .wellcome-text{
   position: relative;
-  top: 30vh;
+  top: 20vh;
   margin-left: 20%;
   margin-right: 20%;
-  font-size: 18pt;
+  font-size: 13pt;
   color: #ccc;
   font-family: 'Merienda', cursive;
-  text-align: justify !important;
+  text-align: left;
 }
 
 .t1, .t2, .t3, .t4, .t5{
-  opacity: 0;
+  transform: scale(0);
 }
 
 
@@ -231,11 +274,15 @@ hr{
   .wellcome-text{
     position: relative;
     top: 18vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 18pt;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 13pt;
     color: #ccc;
     font-family: 'Merienda', cursive;
+    }
+
+    .terminal{
+      height: 30rem;
     }
 
   .btn-down{
@@ -307,6 +354,32 @@ hr{
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
    
+   .terminal{
+     margin-bottom: 50px;
+     
+   }
+
+   .circle-1, .circle-2, .circle-3{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    top: -30px;
+    position: relative;
+    cursor: pointer;
+    
+  } 
+  
+  .circle-2{
+    background-color: yellow;
+  }
+  
+  .circle-3{
+    background-color: green;
+  }
+  
+
     .btn-down{
       top: 0vh;
     }

@@ -42,7 +42,26 @@ doc.ready(function(){
     btn_collapse.sideNav();
     scrollspy.scrollSpy();
     body.css("overflow-x", "hidden");
-    body.css("overflow-y", "hidden");
+    //body.css("overflow-y", "hidden");
+
+
+    //animação da tela de boas vindas usando type.js 
+    var typed = new Typed('.msg-wellcome', {
+      strings: [
+                  "sudo ^1000 rm -rf ^500 / ",
+                  "Olá,",
+                  "sejam ^300 muito bem vindos.",
+                  "É um prezer ^500 tê-los aqui.",
+                  "^1000 Espero que gostem^1500."
+                ],
+      typeSpeed: 100,
+      smartBackspace: true  
+    });
+
+    setTimeout(function(){
+      window.location.href="#about-me";
+    }, 20000);
+
   });
  
 
@@ -86,8 +105,8 @@ doc.scroll(function(){
     btn_act.css("opacity", 0.6);
   }   
 
-  if (window.scrollY > $("#about-me").offset().top - 20) {
-    
+
+  if (window.scrollY > $("#about-me").offset().top - window.innerHeight / 2) {
 
     main.css("bacground-color", "#f2f2f2");
     intro_img.css("opacity", 1);
