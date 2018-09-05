@@ -52,10 +52,12 @@ doc.ready(function(){
                   "Olá,",
                   "sejam ^300 muito bem vindos.",
                   "É um prezer ^500 tê-los aqui.",
-                  "^1000 Espero que gostem^1500."
+                  "^1000 Espero que gostem^5000."
                 ],
       typeSpeed: 100,
-      smartBackspace: true  
+      backSpeed: 50,
+      loop: true 
+
     });
 
     setTimeout(function(){
