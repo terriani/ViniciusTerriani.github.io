@@ -60,7 +60,7 @@ doc.ready(function(){
 
     setTimeout(function(){
       window.location.href="#about-me";
-    }, 20000);
+    }, 25000);
 
   });
  
