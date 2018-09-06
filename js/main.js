@@ -52,19 +52,18 @@ doc.ready(function(){
                   "Olá,",
                   "sejam ^300 muito bem vindos.",
                   "É um prazer ^500 tê-los aqui.",
-                  "^1000 Espero que gostem^4000!!!"
+                  "^1000 <strong>Espero que gostem^1000!!!</strong>^5000"
                 ],
       typeSpeed: 70,
-      backSpeed: 50,
-      loop: true ,
-      shuffle: false,
-      cursorChar:"_"
-
+      backSpeed: 30,
+      loop: true,
+      loopCount: 3,
+      cursorChar:"_",
     });
 
     setTimeout(function(){
       window.location.href="#about-me";
-    }, 25000);
+    }, 21000);
 
   });
  
