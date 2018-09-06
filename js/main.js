@@ -37,13 +37,14 @@ var btn_act = $(".btn-action");
 var nav = $("nav");
 var terminal = $(".terminal");
 var text_terminal = $(".text-terminal");
+var drag = $(".draggable");
 
 
 //executa ao carregar a pagina
 doc.ready(function(){
     btn_collapse.sideNav();
     scrollspy.scrollSpy();
-    $( "#draggable" ).draggable();
+    drag.draggable();
     body.css("overflow-x", "hidden");
     //body.css("overflow-y", "hidden");
 
@@ -244,10 +245,12 @@ function minTerminal(){
   terminal.css("height", "35px");
   terminal.css("width", "100px");
   text_terminal.css("display", "none");
+  terminal.css("transition", ".2s");
 }
 
 function maxTerminal(){
   terminal.css("height", "");
   terminal.css("width", "");
   text_terminal.css("display", "block");
+  terminal.css("transition", ".2s");
 }

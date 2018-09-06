@@ -311,13 +311,13 @@ hr{
       font-size: 15pt;
       position: absolute;
       top: 15%;
-      left: 75%;
+      left: 20%;
       box-shadow: 2px 2px 8px #222;
     
     }
     .terminal{
       height: 30rem;
-      top: 10px;
+      top: 5rem;
     }
 
   .btn-down{
@@ -397,7 +397,7 @@ hr{
       font-size: 15pt;
       position: absolute;
       top: 18%;
-      left: 85%;
+      left: 20%;
       box-shadow: 2px 2px 8px #222;
     }
 
