@@ -41,18 +41,39 @@ header{
   box-shadow: 3px 3px 25px #333;
 }
 
+.btn-terminal{
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid #666;
+  font-size: 15pt;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  box-shadow: 2px 2px 8px #222;
+
+}
+
+.btn-terminal:hover{
+  background-color: #111;
+}
+
 .terminal{
   padding-left: 10px;
   padding-top: 0px;
   padding-right: 10px;
   width: 100%;
   height: 25rem;
-  background: rgba(59,13,50, 0.95);
+  background: rgba(59,13,50, 0.85);
   z-index: 100;
   border-radius: 8px 8px 0 0;
   border-top: 35px solid #444;
-  cursor: text;
+  cursor: -webkit-grab;
   box-shadow: 3px 3px 20px #111;
+}
+
+.terminal:active{
+  cursor: -webkit-grabbing;
 }
 
 .terminal-path{

@@ -58,19 +58,19 @@
     </header>
     <main class="main">
       <!-- Your content here -->
-      <div class="wellcome center-align">
+      <div class="wellcome">
+          <a href="#" class="btn-terminal" onclick="openTerminal();" title="Abrir terminal">>_</a>
         <div class="wellcome-text">
-        <div class="terminal">
+        <div class="terminal" id="draggable">
           <div class="terminal-bar">
-          <div class="circle-1"></div>
-          <div class="circle-2"></div>
-          <div class="circle-3"></div>
+            <a href="#" onclick="closeTerminal();"><div class="circle-1"></div></a>
+            <a href="#" onclick="minTerminal();"><div class="circle-2"></div></a> 
+            <a href="#" onclick="maxTerminal()"><div class="circle-3"></div></a> 
         </div>
-          <span class="terminal-path">vinicius@terriani:~$</span> <span class="msg-wellcome" id="typed"></span>
+          <div class="text-terminal"><span class="terminal-path">vinicius@terriani:~$</span> <span class="msg-wellcome" id="typed"></span></div> 
         </div>
       </div>
      <!-- <div class="center-align btn-down section scrollspy"><a href="#about-me" class="link-down"><i class="material-icons down">arrow_downward</i></a></div>-->
-
       </div>
       <div id="top" class="section scrollspy">
       <div class="row about-me section scrollspy">
@@ -232,5 +232,6 @@
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <!-- js local para algumas animações com jQuery-->
     <script src="js/main.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </body>
 </html>

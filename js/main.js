@@ -35,12 +35,15 @@ var title = $(".title");
 var win = $(window);
 var btn_act = $(".btn-action");
 var nav = $("nav");
+var terminal = $(".terminal");
+var text_terminal = $(".text-terminal");
 
 
 //executa ao carregar a pagina
 doc.ready(function(){
     btn_collapse.sideNav();
     scrollspy.scrollSpy();
+    $( "#draggable" ).draggable();
     body.css("overflow-x", "hidden");
     //body.css("overflow-y", "hidden");
 
@@ -48,23 +51,20 @@ doc.ready(function(){
     //animação da tela de boas vindas usando type.js 
     var typed = new Typed('.msg-wellcome', {
       strings: [
-                  "sudo ^200 apt-^150get upg^120rade ^300 -y",
-                  "Olá,",
+                  "Linux é muito melhor que windows!!!^300",
+                  "Opsss,^300 msg errada rs^600",
+                  "Olá, me chamo Vinicius Terriani",
                   "sejam ^300 muito bem vindos.",
                   "É um prazer ^500 tê-los aqui.",
-                  "^1000 <strong>Espero que gostem^1000!!!</strong>^5000"
+                  "^1000 Espero que gostem^200 do meu ^100 site^1000!!! ^1000",
+                  "<i><b> Que tal batermos um papo ?^2000 </b></i> <br>Me mande um <b><i> E-mail </b> em: <b style='color:green'>viniterriani.vt@gmail.com </i></b> <br>Aguardo seu contato. ^800 <br><br> - Role a pagina para baixo ^200e me conheça melhor."
                 ],
       typeSpeed: 70,
       backSpeed: 30,
-      loop: true,
+      loop: false,
       loopCount: 3,
       cursorChar:"_",
     });
-
-    setTimeout(function(){
-      window.location.href="#about-me";
-    }, 21000);
-
   });
  
 
@@ -213,3 +213,41 @@ doc.scroll(function(){
   }
 
 });
+
+
+var isOpen = true;
+
+function closeTerminal(){
+  terminal.css("display", "none");
+  isOpen = false;
+}
+
+
+
+function openTerminal(){
+  
+  if (isOpen == true) {
+
+      terminal.css("display", "none");
+      isOpen = false;
+
+  }else {
+
+      terminal.css("display", "block");
+      isOpen = true;
+
+  }
+
+}
+
+function minTerminal(){
+  terminal.css("height", "35px");
+  terminal.css("width", "100px");
+  text_terminal.css("display", "none");
+}
+
+function maxTerminal(){
+  terminal.css("height", "");
+  terminal.css("width", "");
+  text_terminal.css("display", "block");
+}
