@@ -303,6 +303,18 @@ hr{
     font-family: 'Ubuntu', sans-serif;
     }
 
+    .btn-terminal{
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      border: 1px solid #666;
+      font-size: 15pt;
+      position: absolute;
+      top: 15%;
+      left: 75%;
+      box-shadow: 2px 2px 8px #222;
+    
+    }
     .terminal{
       height: 30rem;
       top: 10px;
@@ -355,7 +367,7 @@ hr{
     }
 
     .drag-target{
-      min-width: 10vw !important;
+      min-width: 5vw !important;
     }
 
     .contact{
@@ -377,10 +389,21 @@ hr{
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
    
+    .btn-terminal{
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      border: 1px solid #666;
+      font-size: 15pt;
+      position: absolute;
+      top: 18%;
+      left: 85%;
+      box-shadow: 2px 2px 8px #222;
+    }
+
    .terminal{
      margin-bottom: 50px;
      height: 15rem;
-     
    }
 
    .circle-1, .circle-2, .circle-3{
