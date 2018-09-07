@@ -42,7 +42,6 @@ header{
 }
 
 .btn-terminal{
-  padding: 10px 15px;
   background-color: black;
   color: white;
   border: 1px solid #666;
@@ -62,7 +61,6 @@ header{
   padding-left: 10px;
   padding-top: 0px;
   padding-right: 10px;
-  width: 100%;
   height: 25rem;
   background: rgba(59,13,50, 0.85);
   z-index: 100;
@@ -70,6 +68,14 @@ header{
   border-top: 35px solid #444;
   cursor: -webkit-grab;
   box-shadow: 3px 3px 20px #111;
+  position: relative;
+  top: 20vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 13pt;
+  color: #ccc;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
 }
 
 .terminal:active{
@@ -101,7 +107,7 @@ header{
 }
 
 
-.wellcome-text{
+/*.wellcome-text{
   position: relative;
   top: 20vh;
   margin-left: 20%;
@@ -110,7 +116,7 @@ header{
   color: #ccc;
   font-family: 'Ubuntu', sans-serif;
   text-align: left;
-}
+}*/
 
 .t1, .t2, .t3, .t4, .t5{
   transform: scale(0);
@@ -293,7 +299,7 @@ hr{
     font-size: 20pt;
   }
 
-  .wellcome-text{
+  /*.wellcome-text{
     position: relative;
     top: 10vh;
     margin-left: 5%;
@@ -301,7 +307,7 @@ hr{
     font-size: 13pt;
     color: #ccc;
     font-family: 'Ubuntu', sans-serif;
-    }
+    }*/
 
     .btn-terminal{
       padding: 10px 15px;
@@ -318,6 +324,13 @@ hr{
     .terminal{
       height: 30rem;
       top: 5rem;
+      position: relative;
+      top: 10vh;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 13pt;
+      color: #ccc;
+      font-family: 'Ubuntu', sans-serif;
     }
 
   .btn-down{

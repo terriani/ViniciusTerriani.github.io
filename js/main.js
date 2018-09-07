@@ -58,7 +58,7 @@ doc.ready(function(){
                   "sejam ^300 muito bem vindos.",
                   "É um prazer ^500 tê-los aqui.",
                   "^1000 Espero que gostem^200 do meu ^100 site^1000!!! ^1000",
-                  "<i><b> Que tal batermos um papo ?^2000 </b></i> <br>Me mande um <b><i> E-mail </b> em: <b style='color:green'>viniterriani.vt@gmail.com </i></b> <br>Aguardo seu contato. ^800 <br><br> - Role a pagina para baixo ^200e me conheça melhor."
+                  "<i><b> Que tal batermos um papo ?^2000 </b></i> <br>Me mande um <b><i> E-mail </b> em: <b style='color:green'>viniterriani.vt@gmail.com </i></b> <br>Aguardo seu contato. ^800 <br><br> - Role a pagina para baixo ^200e me conheça um pouco melhor."
                 ],
       typeSpeed: 70,
       backSpeed: 30,
