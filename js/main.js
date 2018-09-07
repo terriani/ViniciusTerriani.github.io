@@ -52,7 +52,7 @@ doc.ready(function(){
     //animação da tela de boas vindas usando type.js 
     var typed = new Typed('.msg-wellcome', {
       strings: [
-                  "Linux é muito melhor que windows!!!^300",
+                  "sudo apt-get remove windows^300",
                   "Opsss,^300 msg errada rs^600",
                   "Olá, me chamo Vinicius Terriani",
                   "sejam ^300 muito bem vindos.",
