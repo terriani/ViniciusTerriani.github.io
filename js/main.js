@@ -47,8 +47,10 @@ doc.ready(function(){
     drag.draggable();
     body.css("overflow-x", "hidden");
     //body.css("overflow-y", "hidden");
-
-
+    
+    $(".wellcome-text").css("opacity", 1);
+    $(".wellcome-text").css("transition", "3s");
+    
     //animação da tela de boas vindas usando type.js 
     var typed = new Typed('.msg-wellcome', {
       strings: [

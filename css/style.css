@@ -44,17 +44,34 @@ header{
 .btn-terminal{
   background-color: black;
   color: white;
-  border: 1px solid #666;
+  border-top: 4px solid #666;
+  border-left: 0 transparent;
+  border-right: 0 transparent;
+  border-bottom: 0 transparent;  
   font-size: 15pt;
   position: absolute;
   top: 15%;
   left: 3%;
   box-shadow: 2px 2px 8px #222;
-
+  border-radius: 2px;
+  padding: 5px 17px;
 }
 
 .btn-terminal:hover{
   background-color: #111;
+}
+
+.btn-terminal:target{
+  background-color: black;
+}
+
+
+.wellcome-text{
+  opacity: 0;
+  top: 20vh;
+  margin: 0 auto;
+  height: 25rem;
+  width: 95%;
 }
 
 .terminal{
@@ -76,7 +93,9 @@ header{
   color: #ccc;
   font-family: 'Ubuntu', sans-serif;
   text-align: left;
+  
 }
+
 
 .terminal:active{
   cursor: -webkit-grabbing;
@@ -105,18 +124,6 @@ header{
 .circle-3{
   background-color: green;
 }
-
-
-/*.wellcome-text{
-  position: relative;
-  top: 20vh;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 13pt;
-  color: #ccc;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: left;
-}*/
 
 .t1, .t2, .t3, .t4, .t5{
   transform: scale(0);
