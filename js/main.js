@@ -38,6 +38,7 @@ var nav = $("nav");
 var terminal = $(".terminal");
 var text_terminal = $(".text-terminal");
 var drag = $(".draggable");
+var terminal_manipulate = $(".wellcome-text");
 
 
 //executa ao carregar a pagina
@@ -217,11 +218,13 @@ doc.scroll(function(){
 
 });
 
+terminal.css("transition", "0s");
 
 var isOpen = true;
 
 function closeTerminal(){
-  terminal.css("display", "none");
+  $(".wellcome-text").css("transform", "scale(0)");
+  $(".wellcome-text").css("transition", ".2s");
   isOpen = false;
 }
 
@@ -231,13 +234,15 @@ function openTerminal(){
   
   if (isOpen == true) {
 
-      terminal.css("display", "none");
-      isOpen = false;
+    terminal_manipulate.css("transform", "scale(1)");
+    terminal_manipulate.css("transition", ".2s");
+    isOpen = false;
 
   }else {
 
-      terminal.css("display", "block");
-      isOpen = true;
+    terminal_manipulate.css("transform", "scale(0)");
+    terminal_manipulate.css("transition", ".2s");
+    isOpen = true;
 
   }
 
@@ -247,12 +252,14 @@ function minTerminal(){
   terminal.css("height", "35px");
   terminal.css("width", "100px");
   text_terminal.css("display", "none");
-  terminal.css("transition", ".2s");
+  //terminal.css("transition", ".2s");
+  terminal.css("transition", "0s");
 }
 
 function maxTerminal(){
   terminal.css("height", "");
   terminal.css("width", "");
   text_terminal.css("display", "block");
-  terminal.css("transition", ".2s");
+  //terminal.css("transition", ".2s");
+  terminal.css("transition", "0s");
 }

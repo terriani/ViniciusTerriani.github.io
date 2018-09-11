@@ -42,7 +42,7 @@ header{
 .wellcome{
   min-height: 100vh;
   min-width: 100vw;
-  overflow-y: auto !important;
+  overflow: hidden;
   background-image: url("../img/ubuntu-background.png");
   background-repeat: no-repeat;
   background-size: cover; 
