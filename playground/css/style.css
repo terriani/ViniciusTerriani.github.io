@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #f9f9f9;
+    overflow-x: auto;
+    }
+  main {
+    flex: 1 0 auto;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  nav{
+   /* background-color: transparent;*/
+    border: none;
+    box-shadow: none;
+  }
+  
+  header{
+    color: #444 !important;
+  }
+  
+  .nav-fixed{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 1000;
+  }
+  
+  .logo{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 25pt;
+    text-align: right;
+    
+  }
+
+  .social-btn{
+      margin: 5px;
+  }
+
+  @media only screen and (max-width: 780px) {
+
+    .logo{
+        font-size: 20pt;
+      }
+      
+    .social-btn{
+        text-align: center;
+        width: 80%;
+      }
+
+  }

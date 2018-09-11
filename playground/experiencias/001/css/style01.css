@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+}
+    
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-back{
+  right: 15px;
+  position: fixed;
+  bottom: 30px;
+}
+
+.editor{
+  position: relative;
+  left: -135px;
+  background-color: #111;
+  color: #ccc;
+  width: 38%;
+  min-height: 100vh;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  box-shadow: 6px 6px 20px #333;
+}
+
+.wellcome{
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-y: auto !important;
+  background-color: #f1f1f1;
+}
+
+.terminal{
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  height: 0rem;
+  background: rgba(59,13,50, 1);
+  z-index: 100;
+  border-radius: 0;
+  border-top: 35px solid #444;
+  box-shadow: 3px 3px 20px #111;
+  position: relative;
+  margin: 0 auto;
+  width: 50vw;
+  font-size: 13pt;
+  color: #ccc;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+.terminal-path{
+  color:black;
+}
+
+.circle-1, .circle-2, .circle-3{
+  height: 13px;
+  width: 13px;
+  background-color: red;
+  border-radius: 0%;
+  display: inline-block;
+  top: -30px;
+  position: relative;
+} 
+
+.circle-2{
+  background-color: yellow;
+}
+
+.circle-3{
+  background-color: green;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .editor{
+    background-color: #111;
+    min-width: 150vw;
+    min-height: 0%;
+}
+
+    .terminal{
+      height: 30rem;
+      position: relative;
+      top: 3vh;
+      margin: 10px auto;
+      font-size: 13pt;
+      color: #ccc;
+      font-family: 'Ubuntu', sans-serif;
+      width: 90vw;
+    }
+
+}
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape){
+    .terminal{
+     margin-bottom: 50px;
+     height: 15rem;
+   }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Title of the document</title>
+    <!-- Material Icon CDN -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+      <link rel="stylesheet" href="css/style01.css">
+    <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+        <div id="typed-strings">
+                <code>
+                <pre class="editor">
+                /*
+                * Experimento 001 
+                * data 09/2018
+                * Vinicius Terriani
+                */
+                body{
+                    overflow-x: hidden;
+                }
+                .wellcome{
+                    min-height: 100vh;
+                    min-width: 100vw;
+                    overflow-y: auto !important;
+                }
+                .terminal{
+                    padding-left: 10px;
+                    background: rgba(59,13,50, 1);
+                    padding-right: 10px;
+                    padding-top: 0px;
+                    z-index: 100;
+                    height: 25rem;
+                    border-top: 35px solid #444;
+                    border-radius: 8px 8px 0 0;
+                    position: relative;
+                    box-shadow: 3px 3px 20px #111;
+                    margin-left: 40%;
+                    top: 20vh;
+                    font-size: 13pt;
+                    width: 50vw;
+                    font-family: 'Ubuntu', sans-serif;
+                    color: #ccc;
+                    position: fixed;
+                    text-align: left;
+                .terminal-path{
+                    color:greenyellow;
+                    }
+                    .circle-1, .circle-2, .circle-3{
+                        height: 13px;
+                        width: 13px;
+                        background-color: red;
+                        border-radius: 50%;
+                        display: inline-block;
+                        top: -30px;
+                        position: relative;
+                    } 
+                    .circle-2{
+                        background-color: yellow;
+                    }
+                    .circle-3{
+                        background-color: green;
+                    }  
+                </pre> 
+            </code>
+        </div>
+        <div class="wellcome">
+        <span id="typed"></span>
+        <div class="wellcome-text">
+            <div class="terminal draggable">
+                <div class="terminal-bar">
+                    <a href="#"><div class="circle-1"></div></a>
+                    <a href="#"><div class="circle-2"></div></a> 
+                    <a href="#"><div class="circle-3"></div></a> 
+                </div>
+                <div class="text-terminal"><span class="terminal-path">vinicius@terriani:~$</span> <span class="msg-wellcome">sudo apt-get update</span></div> 
+            </div>
+        </div>
+    </div>
+    <a href="../../index.html" class="btn-floating btn-large waves-effect waves-light red btn-back z-depth-4"><i class="material-icons">arrow_back</i></a>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- CDN type.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="js/main01.js"></script>
+    <script src="js/prism.js" data-="manual"></script>
+    <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $("document").ready(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
+  </body>
+</html>

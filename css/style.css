@@ -23,6 +23,14 @@ header{
   color: #444 !important;
 }
 
+.nav-fixed{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-bottom: 0px;
+  z-index: 1000;
+}
 
 .logo{
   font-family: 'Pattaya', sans-serif;
@@ -337,7 +345,7 @@ hr{
     .terminal{
       height: 30rem;
       position: relative;
-      top: 10vh;
+      top: 15vh;
       margin-left: 5%;
       margin-right: 5%;
       font-size: 13pt;
