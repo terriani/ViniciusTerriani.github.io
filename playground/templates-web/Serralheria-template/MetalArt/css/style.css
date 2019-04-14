@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.splash-screen{
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 1001;
+    overflow: hidden !important;
+    background-color: #333;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    display: block;
+    transition: 3s linear;
+}
+
+.splash-text{
+    top: 30vh;
+    position: relative;
+    opacity: 0;
+    transition: 1.8s ease-in;
+}
+
+.l1, .l3, .l5, .l7{
+    top: 100vh;
+    position: relative;
+    transition: 1.5s ease-in-out;
+}
+
+.l2, .l4, .l6, .l8{
+    position: relative;
+    bottom: 100vh;
+    transition: 1.5s ease-in-out;
+}
+
+.drag-target{
+    width: 30px;
+}
+
+.navbar-fixed{
+    z-index: 1000;
+    background-attachment: fixed !important;
+}
+
+.parallax-container{
+    height: 80vh;
+}
+
+.parallax-1{
+    height: 100vh;
+    padding-top: 100px;
+    opacity: 0;
+    transition: 3s ease-in-out;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 100vw;
+}
+
+.title-video{
+    font-family: 'Abril Fatface', cursive;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav{
+    box-shadow: none;
+
+}
+
+nav li a{
+    font-size: 13pt;
+}
+
+nav li a:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out
+}
+
+.side-nav{
+    z-index: 1000;
+}
+
+.side-nav li a{
+    margin-top: 20px;
+    font-size: 15pt
+}
+
+.side-nav li a:hover{
+    transform: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.title-mobile-menu{
+    color: white;
+    font-size: 28pt;
+    font-family: 'Abril Fatface', cursive;
+}
+
+video{
+    right: 0;
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    
+}
+
+.title{
+    color: white;
+    text-shadow: 2px 2px 6px #111; 
+    font-size: 50pt;
+}
+
+.type-title{
+    margin-top: 200px
+}
+
+p{
+    font-size: 15pt
+}
+
+.brand-logo{
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 1px 1px 3px #999;
+}
+
+.call a{
+    display: inline-flex;
+}
+
+.about-us{
+    font-size: 14pt;
+    opacity: 0;
+}
+
+.title-service{
+    position: relative;
+    left: -100vw;
+    transition: 1s ease-out;
+}
+
+.card{
+    transition: .1s ease-in-out;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,.05);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+    background-color: rgba(0,0,0,0);
+}
+
+.maps{
+    margin-bottom: 50px;
+}
+
+.map{
+    position: relative;
+    left: -100%;
+}
+
+.title-map{
+    position: relative;
+    right: -100%;
+}
+
+.btn-up{
+    
+    transition: ease-in-out 1s;
+    position: fixed;
+    right: 20px;
+    bottom: -100%;
+    z-index: 100;
+    
+}
+
+.btn-msg{
+    transition: ease-in-out 1s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+footer{
+    transition: 1s ease-in-out;
+    background-color: rgba(0,0,0,.5) !important;
+    z-index: 100;
+}
+
+.filter-footer{
+   
+    background-image: url("../img/IMG_20190201_110516721_HDR-01.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.close-galery{
+    font-size: 30pt;
+    color: darkorange;
+    top: .5vh;
+    left: 80vw;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+    border-bottom: 2px solid darkorange;
+    transition: .1s;
+}
+
+.close-galery:hover{
+    border-bottom: 5px solid darkorange;
+    transition: .1s;
+}
+
+.slider{
+    background-color: black;
+    box-shadow: 15px 15px 30px #333;
+}
+
+.portifolio{
+    cursor: pointer;
+    
+}
+
+.caption{
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.galeryStill{
+    overflow-y: hidden !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+.galeryTitle{
+    position: relative;
+    top: -20px;
+}

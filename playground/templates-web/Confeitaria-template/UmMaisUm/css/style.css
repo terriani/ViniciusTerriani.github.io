@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-fixed{
+    z-index: 1000;
+}
+
+.drag-target{
+    width: 50px !important;
+}
+
+.intro{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden !important;
+}
+
+.img_intro{
+    height: 40vh;
+    width: auto;
+    opacity: 0;
+    transition: 2.5s;
+    transform: scale(.6);
+    top: 20vh;
+    position: relative;
+    z-index: 2;
+}
+
+.text-intro{
+    opacity: 0;
+    transform: scale(0) !important;
+    transition: 1s ease-in;
+    position: relative;
+    top: 25vh;
+    z-index: 2;
+    font-size: 150%;
+}
+
+.text-intro2{
+    opacity: 0;
+    transform: scale(0) !important;
+    transition: 2s ease-in-out;
+    position: relative;
+    top: 26vh;
+    z-index: 2;
+}
+
+
+.img-donut1, .img-donut2, .img-donut3{
+    height: 40vh;
+    width: auto;
+    opacity: 1;
+    z-index: 1;
+} 
+
+.img-donut1{
+    float: left;
+    position: relative;
+    left: -100%;
+    transition: 8s ease-out;
+    opacity: .2;
+}
+
+.img-donut2{
+    float: right;
+    position: relative;
+    right: -100%;
+    transition: 5s linear;
+    opacity: .8;
+    top: 27vh;
+}
+
+.img-donut3{
+    float: left;
+    position: relative;
+    left: -100%;
+    transition: 5s ease-in;
+    opacity: .6;
+}
+
+.title{
+    font-size: 50pt;
+    text-align: center;
+    font-family: 'Fascinate Inline', cursive;
+    left: -100%;
+    position: relative;
+}
+
+.sub-title{
+    font-size: 38pt;
+    right: 100%;
+    position: relative;
+}
+
+main, footer{
+    opacity: 0;
+    transition: 2s ease-out;
+}
+
+.background{
+    box-shadow: 2px 2px 12px #444
+}
+
+.logo{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 20pt;
+    text-align: center !important    
+}
+
+.img_logo{
+    height: 95px;
+    width: 95px;
+    transform: rotate(20deg);
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgba(255,255, 255, .7);  
+    border-bottom: 3px solid transparent;
+    transition: 2s ease-in;
+}
+
+ul li a{
+    color: #2196f3 !important;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+.img-head{
+    background-image: url("../img/donut2.png");
+    background-size: cover;
+    float: right;
+    height: 200px;
+    width: 200px;
+    opacity: 0;    
+    transform: scale(.9);
+}
+
+.head{
+    height: 15vh;
+    
+}
+
+.about{
+      text-align: left;
+}
+
+footer{
+    background-image: url("../img/beans-1737906_640.png") !important;
+    opacity: 0 ;
+    transition: 1s ease-in-out;
+    z-index: -1;
+}
+
+.img-about{
+    background-image: url("../img/cupcake-4064405_640.png");
+    background-size: cover;
+    float: left;
+    height: 240px;
+    width: 240px;
+    opacity: .9;
+    transform: rotate(-25deg); 
+    margin-bottom: 100px;
+    opacity: .2;
+    transition: 1.5s;
+}
+
+.history{
+    text-align: right;
+}
+
+h4{
+    font-family: 
+    'Fascinate Inline', cursive;
+    color: #2196f3;
+}
+
+p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem; 
+}
+
+.pug-img{
+    height: 250px;
+    width: auto;
+}
+
+.love-msg{
+    font-family: 'Fascinate Inline', cursive;
+    text-align: center;
+    font-size: 16pt;
+    text-shadow: 1px 1px 3px #2196f3;
+}
+
+.text-footer{
+    font-family:'Fascinate Inline', cursive;
+    font-size: 25pt;
+    text-shadow: 2px 2px 6px #2196f3;
+}
+
+.text-footer-sub{
+    font-family:'Fascinate Inline', cursive;
+    font-size: 15pt;
+    text-shadow: 1px 1px 4px #2196f3;
+}
+
+.img-galery{
+    height: 300px;
+    width: 300px ;
+    border-radius: 5px;
+    
+}
+
+.btn-msg{
+    transition: ease-in-out 1s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+
+.img-d3{
+    height: 500px;
+    width: auto;
+    float: right !important;
+    position: static;
+    margin-bottom: -40vh;
+    margin-top: -300px;
+    margin-right: -15vw;
+    z-index: 1000 !important;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+.card-title{
+    background-color:rgba(0, 0, 0, .3);
+    border-radius: 0;
+    text-align: center !important;
+    width: 100%; 
+    transition: .3s linear;
+}
+
+.card-title:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+@media (max-width: 599px) {
+    .img_intro{
+        top: -60vh;
+    }
+    .text-intro{
+        top: -57vh;
+    }
+    .text-intro2{
+        top: -56vh;
+    }
+
+    .title{
+        font-size: 30pt;
+    }
+
+    .title>.sub-title{
+        font-size: 28pt;
+    }
+
+    .img-about{
+        height: 130px;
+        width: 130px;
+    }
+
+    .text-footer{
+        font-size: 18pt;
+    }
+
+    .text-footer-sub{
+        font-size: 13pt;
+    }
+    .love-msg{
+        font-size: 12pt;
+    }
+
+    .img-galery{
+        height: auto;
+        width: 90vw !important;
+        margin: 20px auto !important;
+    }
+
+    ul li a{
+        font-size: 1.8rem;
+    }
+
+    .img-d3{
+        margin-top: -15%;
+        height: 200px;
+        width: 200px;
+    }
+
+    .pug-img{
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 920px) and (orientation: landscape) {
+    .img-d3{
+        margin-top: -25% !important;
+        height: 200px;
+        width: 200px;
+    }
+
+}
