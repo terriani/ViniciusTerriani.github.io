@@ -1,0 +1,6 @@
+[submodule "/playground/templates-web/Confeitaria-template/UmMaisUmConfeitaria/"] 
+  	path = / playground/templates-web/Confeitaria-template/UmMaisUmConfeitaria/
+  	url = git://https://github.com/terriani/UmMaisUmConfeitaria/
+[submodule "/playground/templates-web/serralheria-template/MetalArt/"] 
+  	path = / playground/template-web/Confeitaria-template/
+  	url = git://https://github.com/terriani/MetalArt/
