@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <title>Title of the document</title>
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h3 class="center white-text">Um simples checkbox</h3><br><h5 class="center white-text">com css, html e uma pitadinha de jquery</h5>
+        <div class="check">
+            <div class="inner">
+                <div class="toggle">
+                    <div class="dot"></div>
+                </div>
+            </div>            
+        </div>
+        <br><br>
+        <div class="container">
+                  <div class="row">
+                        <div class="col s12 m6 l6">
+                                <h5 class="white-text">< Código desenvolvido no exemplo /></h5>
+                                <pre>
+
+                                    
+                 arquivo: css/style.css
+
+    @charset "utf-8";
+      
+      body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+          background-color: #333;
+          }
+        main {
+          flex: 1 0 auto;
+        }
+      
+      .check{
+        background: linear-gradient(90deg,#f9f9f9, #f5f5f5);
+        height: 100px;
+        width: 300px;
+        border-radius: 50px;
+        margin: 0vw auto;
+        border-bottom: 1px solid white;
+        box-shadow: 0 0 10px red;
+      }
+      
+      .inner{
+        background: linear-gradient(90deg, #dab, red);
+        height: 70px;
+        width: 240px;
+        border-radius: 50px;
+        margin: 10vw auto;
+        box-shadow: inset 1px 1px 2px #888;
+        position: relative;
+        bottom: -14px;
+        border-bottom: 1px solid white;
+      }
+      .toggle{
+          background-color: #f1f1f1;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          margin: 10vw auto;
+          position: relative;
+          left: -75px;
+          bottom: 14px;
+          box-shadow: 0 0 8px #666;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
+          transition: .5s;
+          cursor: pointer;
+      }
+      
+      .dot{
+          height: 10px;
+          width: 10px;
+          background-color: red;
+          border-radius: 50%;
+          position: relative; 
+          bottom: -45px;
+          left: 10px;
+          border: 1px solid #888;
+          box-shadow: 0 0 15px red;   
+      }
+      
+      .active{
+        background: linear-gradient(90deg, lime, green); 
+        height: 70px;
+        width: 240px;
+        border-radius: 50px;
+        margin: 10vw auto;
+        box-shadow: inset 1px 1px 2px #888;
+        position: relative;
+        bottom: -14px;
+        border-bottom: 1px solid white;
+        transition: .5s !important; 
+      }
+      
+      .slide{
+        left: 75px;
+        transition: .5s;
+        position: relative;
+      }
+      
+      .dot-on{
+        background-color: lime;
+        box-shadow: 0 0 15px lime; 
+      }
+      
+      .check-on{
+        box-shadow: 0 0 15px lime;
+      }         
+                                </pre>
+                                <pre>
+
+
+                 arquivo: js/app.js
+                                  
+        var = $(".toggle");
+        var = $(".inner");
+        var = $(".dot");
+        var = $(".check");
+      
+          toggle.click(function () {
+          inner.toggleClass("active");
+          toggle.toggleClass("slide");
+          dot.toggleClass("dot-on");
+          check.toggleClass("check-on");
+      
+      });
+                                </pre>
+                        </div>
+                </div>
+              </div>
+    </main>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
