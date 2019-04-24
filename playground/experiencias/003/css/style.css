@@ -3,15 +3,22 @@
 html, *{
     margin: 0;
     padding: 0;
-    max-height: 100vh;
-    max-width: 100vw;
+    overflow: hidden;
 }
 
-body{
+
+#home{
     display: flex;
     flex-direction: column;
     background: #222;
     overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 h1{
@@ -28,8 +35,13 @@ footer span{
     color: white;
     height: 50px;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2196f3;
    
 }
+
 
 
 
@@ -40,12 +52,14 @@ footer span{
     width: 50px;
     padding: 5px;
     margin: 10px;
+    position: absolute;
+    z-index: 1000;
 }
 
 
  .bar1{
      position: absolute;
-    background-color: red;
+    background-color: #fff;
     height: 5px;
     width: 40px;
     top: 20px;
@@ -56,7 +70,7 @@ footer span{
 
 .bar2{
     position: absolute;
-   background-color: red;
+   background-color: #2196f3;
    height: 5px;
    width: 40px;
    top: 40px;
@@ -93,6 +107,7 @@ footer span{
 
 .nav-on{
        top: 0 !important;
+       z-index: 900 !important;
 }
 
 ul{
@@ -107,3 +122,91 @@ ul li a{
     line-height: 50px;
     text-align: center;
 }
+
+ul li a:hover{
+    text-decoration: underline overline;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+
+#enterprise{
+    background-color: #4a148c;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    top: 100vh;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.enterprise-on{
+       top: 0 !important;
+}
+
+#portifolio{
+    background-color: #b71c1c;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    top: 100vh;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portifolio-on{
+       top: 0 !important;
+}
+
+
+#galery{
+    background-color: #1a237e;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    top: 100vh;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.galery-on{
+       top: 0 !important;
+}
+
+
+#contact{
+    background-color: #880e4f ;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 500;
+    width: 100vw;
+    top: 100vh;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-on{
+       top: 0 !important;
+}
+
+
