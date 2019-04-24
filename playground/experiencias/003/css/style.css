@@ -13,7 +13,7 @@ html, *{
     background: #222;
     overflow: hidden;
     height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     text-align: center;
     justify-content: center;
