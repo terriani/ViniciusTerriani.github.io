@@ -152,7 +152,7 @@ ul li a:hover{
 
 #portifolio{
     background-color: #b71c1c;
-    min-height: 120vh;
+    min-height: 130vh;
     position: absolute;
     z-index: 500;
     width: 100vw;
@@ -166,7 +166,7 @@ ul li a:hover{
 }
 
 .portifolio-on{
-       bottom: -20vh !important;
+       bottom: -30vh !important;
 }
 
 
