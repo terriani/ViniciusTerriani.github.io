@@ -133,7 +133,7 @@ ul li a:hover{
 
 #enterprise{
     background-color: #4a148c;
-    min-height: 100vh;
+    min-height: 105vh;
     position: absolute;
     z-index: 500;
     width: 100vw;
@@ -152,7 +152,7 @@ ul li a:hover{
 
 #portifolio{
     background-color: #b71c1c;
-    min-height: 100vh;
+    min-height: 105vh;
     position: absolute;
     z-index: 500;
     width: 100vw;
@@ -172,7 +172,7 @@ ul li a:hover{
 
 #galery{
     background-color: #1a237e;
-    min-height: 100vh;
+    min-height: 105vh;
     position: absolute;
     z-index: 500;
     width: 100vw;
@@ -192,7 +192,7 @@ ul li a:hover{
 
 #contact{
     background-color: #880e4f ;
-    min-height: 100vh;
+    min-height: 105vh;
     position: absolute;
     z-index: 500;
     width: 100vw;
