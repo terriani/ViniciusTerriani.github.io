@@ -156,7 +156,7 @@ ul li a:hover{
     position: absolute;
     z-index: 500;
     width: 100vw;
-    top: 100vh;
+    bottom: 100vh;
     transition: 1s;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ ul li a:hover{
 }
 
 .portifolio-on{
-       top: 0 !important;
+       bottom: 0 !important;
 }
 
 
@@ -196,7 +196,7 @@ ul li a:hover{
     position: absolute;
     z-index: 500;
     width: 100vw;
-    top: 100vh;
+    bottom: 100vh;
     transition: 1s;
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ ul li a:hover{
 }
 
 .contact-on{
-       top: 0 !important;
+       bottom: 0 !important;
 }
 
 
